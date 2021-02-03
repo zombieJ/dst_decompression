@@ -16,7 +16,9 @@ class TexReader {
     // KTEX
     if (data.readChars(4) !== "KTEX") {
       throw new Error("Not a .tex file");
-    }
+	}
+	
+	console.log('~~~', data.readUint());
 
     const b = data.readByte(4);
     const aaa = buffer2number(b, [3, 3, 3, 4, 1, 18], [4, 5, 4, 5, 2, 12]);
