@@ -19,40 +19,40 @@ class BuildReader {
     }
 
     // Version: 5 or 6
-    const version = data.readUint();
+    const version = data.readUint32();
 
     // Symbols
-    const symbolCount = data.readUint();
+    const symbolCount = data.readUint32();
 
     // Frames
-    const frameCount = data.readUint();
+    const frameCount = data.readUint32();
 
     // Build Name
     const buildName = data.readStr();
 
     // Atlases
-    const atlasCount = data.readUint();
+    const atlasCount = data.readUint32();
 
     // Atlases names
     const atlasNames = data.loop(atlasCount, () => data.readStr());
 
     // Symbols
     const symbols = data.loop(symbolCount, () => {
-      const hash = data.readUint();
-      const frameCount = data.readUint();
+      const hash = data.readUint32();
+      const frameCount = data.readUint32();
 
       const symbol = {
         hash,
         frameCount,
         frames: data.loop(frameCount, () => ({
-          frame: data.readUint(),
-          duration: data.readUint(),
+          frame: data.readUint32(),
+          duration: data.readUint32(),
           x: data.readFloat(),
           y: data.readFloat(),
           w: data.readFloat(),
           h: data.readFloat(),
-          alphaIdx: data.readUint(),
-          alphaCount: data.readUint(),
+          alphaIdx: data.readUint32(),
+          alphaCount: data.readUint32(),
         })),
       };
 
@@ -60,7 +60,7 @@ class BuildReader {
 	});
 	
     // Alpha Verts???
-    const alphaVerts = data.readUint();
+    const alphaVerts = data.readUint32();
 
     // Triangles???
     const triangles = data.loop(symbolCount, (symbolIndex) => {
@@ -84,11 +84,11 @@ class BuildReader {
 	});
 	
 	// Hash table size
-	const hashTableSize = data.readUint();
+	const hashTableSize = data.readUint32();
 	console.log('S:', hashTableSize);
 
 	const hashTable = data.loop(hashTableSize, () => {
-		const hashValue = data.readUint();
+		const hashValue = data.readUint32();
 		const hashName = data.readStr();
 
 		return {
