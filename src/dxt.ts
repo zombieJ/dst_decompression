@@ -1,14 +1,17 @@
 import * as jimp from "jimp";
 import { BufferData, debug } from "./util";
 
+const colorR = new Set<any>();
+const colorSet = new Set<number>();
+
 function parse565(color: number) {
   let value = color;
   const b = (value & ((1 << 5) - 1)) << 3;
 
-  value <<= 5;
+  value >>= 5;
   const g = (value & ((1 << 6) - 1)) << 2;
 
-  value <<= 6;
+  value >>= 6;
   const r = (value & ((1 << 5) - 1)) << 3;
 
   return { r, g, b };
@@ -19,10 +22,13 @@ function rgba2hex(r: number, g: number, b: number, a: number) {
   color = (color << 8) | g;
   color = (color << 8) | b;
   color = (color << 8) | a;
+  color = color >>> 0;
+
+  colorR.add(r + "|" + g + "|" + b + "|" + a + "<" + color);
+
   return color;
 }
 
-const colorSet = new Set<number>();
 function parseBlock(data: BufferData) {
   // ====================== Alpha ======================
   const alpha0 = data.readByte();
@@ -70,6 +76,8 @@ function parseBlock(data: BufferData) {
 
   // Build color table
   const colors: number[] = [color0, color1];
+  colorSet.add(color0);
+  colorSet.add(color1);
 
   if (color0 <= color1) {
     colors[2] = (color0 + color1) / 2;
@@ -98,8 +106,7 @@ function parseBlock(data: BufferData) {
 
   return colorList.map((color, index) => {
     const rgb = parse565(color);
-    const rgba = rgba2hex(rgb.r, rgb.g, rgb.b, alphaList[index])
-    colorSet.add(rgba);
+    const rgba = rgba2hex(rgb.r, rgb.g, rgb.b, alphaList[index]);
     return rgba;
   });
 }
@@ -109,21 +116,29 @@ export function parseDXT5(buffer: Buffer, width: number, height: number) {
   debug(0, "Buffer Size:", buffer.length, `${buffer.length / 8}`);
 
   const img = new jimp(width, height);
-  for (let y = 0; y < height; y += 4) {
-    for (let x = 0; x < height; x += 4) {
-      // Fill 4 * 4
-      const blockColors = parseBlock(data);
-      blockColors.forEach((hexColor, index) => {
-        const px = x + index % 4;
-        const py = y + Math.floor(index / 4);
-        img.setPixelColor(hexColor, px, py);
-      });
+
+  try {
+    for (let y = 0; y < height; y += 4) {
+      for (let x = 0; x < height; x += 4) {
+        // Fill 4 * 4
+        const blockColors = parseBlock(data);
+        blockColors.forEach((hexColor, index) => {
+          const px = x + (index % 4);
+          const py = y + Math.floor(index / 4);
+          img.setPixelColor(hexColor, px, py);
+        });
+      }
     }
+  } catch (e) {
+    throw e;
+  } finally {
+    console.log(
+      "Color Set:",
+      Array.from(colorSet).map((c) => c.toString(16).padStart(8, "0"))
+    );
+
+    console.log("RGBA:", colorR);
   }
-
-  debug(1, "Reach End:", data.reachEnd());
-
-  console.log('Color Set:', colorSet);
 
   return img;
 }
