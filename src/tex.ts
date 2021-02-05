@@ -91,8 +91,8 @@ class TexReader {
     });
   }
 
-  async saveImg(outputPath: string) {
-    const img = this.imgs[0];
+  async saveImg(outputPath: string, imgIndex: number = 0) {
+    const img = this.imgs[imgIndex];
     debug(1, img);
     const jimp = parseDXT5(img.buffer, img.width, img.height);
     jimp.write(outputPath);
