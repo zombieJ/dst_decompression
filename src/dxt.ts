@@ -17,6 +17,7 @@ function parse565(color: number) {
   return { r, g, b };
 }
 
+
 function rgba2hex(r: number, g: number, b: number, a: number) {
   let color = r;
   color = (color << 8) | g;
@@ -28,6 +29,9 @@ function rgba2hex(r: number, g: number, b: number, a: number) {
 
   return color;
 }
+
+let c01 = 0;
+let c10 = 0;
 
 function parseBlock(data: BufferData) {
   // ====================== Alpha ======================
@@ -82,10 +86,16 @@ function parseBlock(data: BufferData) {
   if (color0 <= color1) {
     colors[2] = (color0 + color1) / 2;
     colors[3] = 0;
+    c01 += 1;
   } else {
-    for (let i = 1; i < 3; i += 1) {
-      colors[1 + i] = ((3 - i) * color0 + i * color1) / 3;
-    }
+    //   for (let i = 1; i < 3; i += 1) {
+    //     colors[1 + i] = ((3 - i) * color0 + i * color1) / 3;
+    //   }
+    // colors[2] = parseInt("0000011111100000", 2);
+    colors[3] = parseInt("0000000000011111", 2);
+    colors[2] = (2 * color0 + color1) / 3;
+    // colors[3] = (color0 + 2 * color1) / 3;
+    c10 += 1;
   }
 
   debug(0, "Colors:", colors);
@@ -132,12 +142,12 @@ export function parseDXT5(buffer: Buffer, width: number, height: number) {
   } catch (e) {
     throw e;
   } finally {
-    console.log(
-      "Color Set:",
-      Array.from(colorSet).map((c) => c.toString(16).padStart(8, "0"))
-    );
-
-    console.log("RGBA:", colorR);
+    console.log(c01, c10);
+    // console.log(
+    //   "Color Set:",
+    //   Array.from(colorSet).map((c) => c.toString(16).padStart(8, "0"))
+    // );
+    // console.log("RGBA:", colorR);
   }
 
   return img;
