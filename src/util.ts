@@ -90,7 +90,7 @@ export function setDebugLevel(lvl: number) {
 }
 
 export function debug(level: number, ...content: any) {
-  if (level >= debugLevel) {
+  if (level <= debugLevel) {
     console.log(...content);
   }
 }

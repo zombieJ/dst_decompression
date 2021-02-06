@@ -11,6 +11,6 @@ describe('Tex', () => {
 		const tex = new TexReader(path.resolve(__dirname, "farm_plant_tomato", "atlas-0.tex"));
 		await tex.load();
 
-		await tex.saveImg(path.resolve(__dirname, "farm_plant_tomato", "atlas-0.png"), 1);
+		await tex.saveImg(path.resolve(__dirname, "farm_plant_tomato", "atlas-0.png"));
 	});
 });

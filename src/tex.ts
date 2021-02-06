@@ -93,7 +93,7 @@ class TexReader {
 
   async saveImg(outputPath: string, imgIndex: number = 0) {
     const img = this.imgs[imgIndex];
-    debug(1, img);
+    debug(1, 'Image Info:', img);
     const jimp = parseDXT5(img.buffer, img.width, img.height);
     jimp.write(outputPath);
   }

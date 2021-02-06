@@ -1,6 +1,6 @@
 import * as fs from "fs-extra";
 import * as path from "path";
-import { BufferData } from "./util";
+import { BufferData, debug } from "./util";
 
 class BuildReader {
   filePath: string;
@@ -57,18 +57,18 @@ class BuildReader {
       };
 
       return symbol;
-	});
-	
+    });
+
     // Alpha Verts???
     const alphaVerts = data.readUint32();
 
     // Triangles???
     const triangles = data.loop(symbolCount, (symbolIndex) => {
-	const symbol = symbols[symbolIndex];
-	const symbolFrameCount = symbol.frameCount;
+      const symbol = symbols[symbolIndex];
+      const symbolFrameCount = symbol.frameCount;
 
       return data.loop(symbolFrameCount, (frameIndex) => {
-		const frameAlphaCount = symbol.frames[frameIndex].alphaCount;
+        const frameAlphaCount = symbol.frames[frameIndex].alphaCount;
 
         return data.loop(frameAlphaCount / 3, () => {
           return data.loop(3, () => ({
@@ -81,28 +81,22 @@ class BuildReader {
           }));
         });
       });
-	});
-	
-	// Hash table size
-	const hashTableSize = data.readUint32();
-	console.log('S:', hashTableSize);
+    });
 
-	const hashTable = data.loop(hashTableSize, () => {
-		const hashValue = data.readUint32();
-		const hashName = data.readStr();
+    // Hash table size
+    const hashTableSize = data.readUint32();
 
-		return {
-			hashValue,
-			hashName,
-		};
-	});
+    const hashTable = data.loop(hashTableSize, () => {
+      const hashValue = data.readUint32();
+      const hashName = data.readStr();
 
-	console.log('=>', hashTable);
+      return {
+        hashValue,
+        hashName,
+      };
+    });
 
-    // console.log(">>>", atlasCount, atlasNames, symbolCount);
-    // console.log(JSON.stringify(symbols, null, 2));
-    
-    // console.log(JSON.stringify(triangles, null, 2));
+    debug(0, "Hash Table:", hashTable);
   }
 }
 
