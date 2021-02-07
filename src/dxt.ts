@@ -1,7 +1,7 @@
 import * as jimp from "jimp";
 import { BufferData, debug } from "./util";
 
-class RGBA {
+export class RGBA {
   r: number;
   g: number;
   b: number;
@@ -165,29 +165,29 @@ function parseBlock(data: BufferData) {
   });
 }
 
-export function parseDXT5(buffer: Buffer, width: number, height: number) {
+export function parseDXT5(buffer: Buffer, width: number, height: number, flip: boolean = true) {
   const data = new BufferData(buffer);
-  debug(0, "Buffer Size:", buffer.length, `${buffer.length / 8}`);
+  debug(1, "Buffer Size:", buffer.length, `${buffer.length / 8}`);
 
   const img = new jimp(width, height);
   img.quality(100);
 
-  try {
-    for (let y = 0; y < height; y += 4) {
-      for (let x = 0; x < width; x += 4) {
-        // Fill 4 * 4
-        const blockColors = parseBlock(data);
+  for (let y = 0; y < height; y += 4) {
+    for (let x = 0; x < width; x += 4) {
+      // Fill 4 * 4
+      const blockColors = parseBlock(data);
 
-        blockColors.forEach((hexColor, index) => {
-          const px = x + (index % 4);
-          const py = y + Math.floor(index / 4);
-          img.setPixelColor(hexColor, px, py);
-        });
-      }
+      blockColors.forEach((hexColor, index) => {
+        const px = x + (index % 4);
+        const py = y + Math.floor(index / 4);
+        img.setPixelColor(hexColor, px, py);
+      });
     }
-  } catch (e) {
-    throw e;
-  } finally {
+  }
+
+  // 饥荒的贴图是反的，不明白为啥要这么预处理
+  if (flip) {
+    img.flip(false, true);
   }
 
   return img;

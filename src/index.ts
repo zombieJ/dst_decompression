@@ -1,4 +1,5 @@
+import AnimReader from "./anim";
 import BuildReader from "./build";
 import TexReader from "./tex";
 
-export { BuildReader, TexReader };
+export { AnimReader, BuildReader, TexReader };

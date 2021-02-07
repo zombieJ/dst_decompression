@@ -89,12 +89,25 @@ class TexReader {
       const img = this.imgs[index];
       img.buffer = data.readBuffer(img.dataSize);
     });
+
+    return this;
   }
 
-  async saveImg(outputPath: string, imgIndex: number = 0) {
+  parseImg(imgIndex: number = 0) {
     const img = this.imgs[imgIndex];
     debug(1, 'Image Info:', img);
     const jimp = parseDXT5(img.buffer, img.width, img.height);
+    return jimp;
+  }
+
+  saveImg(outputPath: string, imgIndex?: number) {
+    const jimp = this.parseImg(imgIndex);
+
+    if (imgIndex === undefined) {
+      const img = this.imgs[0];
+      jimp.resize(img.width / 2, img.height / 2);
+    }
+
     jimp.write(outputPath);
   }
 }
