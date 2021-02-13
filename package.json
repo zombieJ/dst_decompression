@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^9.1.0",
-    "jimp": "^0.16.1"
+    "jimp": "^0.16.1",
+    "xml": "^1.0.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.6",

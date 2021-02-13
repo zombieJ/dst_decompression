@@ -17,5 +17,11 @@ describe("Anim", () => {
       JSON.stringify(anim, null, 2),
       "utf8"
     );
+
+    await fs.writeFile(
+      path.resolve(__dirname, ANIM_PATH, "anim.xml"),
+      anim.scml(),
+      "utf8"
+    );
   });
 });

@@ -1,8 +1,7 @@
 import * as fs from "fs-extra";
 import * as path from "path";
+import * as xml from "xml";
 import { BufferData, debug } from "./util";
-import TexReader from "./tex";
-import { RGBA } from "./dxt";
 
 class AnimReader {
   filePath: string;
@@ -12,7 +11,34 @@ class AnimReader {
   frameCount: number;
   eventCount: number;
   animCount: number;
-  anims: {}[];
+  anims: {
+    name: string;
+    facingBtye: number;
+    bankHash: number;
+    frameRate: number;
+    frameCount: number;
+    frames: {
+      x: number;
+      y: number;
+      w: number;
+      h: number;
+      eventCount: number;
+      eventHashes: number[];
+      elementCount: number;
+      elements: {
+        hash: number;
+        buildFrame: number;
+        layerNameHash: number;
+        m_a: number;
+        m_b: number;
+        m_c: number;
+        m_d: number;
+        m_tx: number;
+        m_ty: number;
+        z: number;
+      }[];
+    }[];
+  }[];
   hashNames: Record<string, string>;
 
   constructor(filePath: string) {
@@ -70,7 +96,7 @@ class AnimReader {
           m_c: data.readFloat(),
           m_d: data.readFloat(),
           m_tx: data.readFloat(),
-          m_tz: data.readFloat(),
+          m_ty: data.readFloat(),
           z: data.readFloat(),
         }));
 
@@ -91,6 +117,98 @@ class AnimReader {
     hashTable.forEach(({ hashValue, hashName }) => {
       this.hashNames[hashValue] = hashName;
     });
+  }
+
+  scml() {
+    const xmlStr = xml(
+      {
+        // spriter_data
+        spriter_data: [
+          {
+            _attr: {
+              scml_version: "1.0",
+              generator: "BrashMonkey Spriter",
+              generator_version: "b5",
+            },
+          },
+
+          // spriter_data > folder
+          {
+            folder: [
+              {
+                _attr: {},
+              },
+            ],
+          },
+
+          // spriter_data > entity
+          {
+            entity: [
+              {
+                _attr: { id: "0", name: "poop" },
+              },
+
+              // spriter_data > entity > [LOOP] animation
+              ...[...this.anims].reverse().map((anim, animIndex) => {
+                const { frameRate, frameCount, frames, bankHash } = anim;
+                const frameDuration = 1000 / frameRate;
+                const frameLength = frameCount * frameDuration;
+
+                // 填充最后一帧
+                const mergedFrames = [...frames];
+                if (frames.length) {
+                  mergedFrames.push(frames[frames.length - 1]);
+                }
+
+                return {
+                  animation: [
+                    {
+                      _attr: {
+                        id: animIndex,
+                        name: "dump_90s",
+                        length: Math.floor(frameLength),
+                      },
+                    },
+
+                    // spriter_data > entity > [LOOP] animation > mainline
+                    {
+                      mainline: [
+                        ...mergedFrames.map((frame, frameIndex) => {
+                          // spriter_data > entity > [LOOP] animation > mainline > key
+                          return {
+                            key: [
+                              {
+                                _attr: {
+                                  id: frameIndex,
+                                  time: Math.floor(frameIndex * frameDuration),
+                                },
+                              },
+                              // spriter_data > entity > [LOOP] animation > mainline > key > object_ref
+                              {
+                                object_ref: [
+                                  {
+                                    _attr: {
+                                      id: 0,
+                                      name: this.hashNames[bankHash],
+                                    },
+                                  },
+                                ],
+                              },
+                            ],
+                          };
+                        }),
+                      ],
+                    },
+                  ],
+                };
+              }),
+            ],
+          },
+        ],
+      },
+      true
+    );
+    return `<?xml version="1.0" encoding="UTF-8"?>\n${xmlStr}`;
   }
 }
 
