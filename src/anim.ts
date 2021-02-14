@@ -3,7 +3,7 @@ import * as path from "path";
 import * as xml from "xml";
 import * as chalk from "chalk";
 import BuildReader from "./build";
-import { getAnimationName } from "./scmlUtil";
+import { getAnimationName, Layers } from "./scmlUtil";
 import { BufferData, debug } from "./util";
 
 class AnimReader {
@@ -123,6 +123,8 @@ class AnimReader {
   }
 
   async scml(buildPath: string) {
+    this.anims = this.anims.filter((anim) => anim.name === "open");
+
     // =============================== 需要加载贴图信息 ===============================
     const build = new BuildReader(buildPath);
     await build.load();
@@ -166,6 +168,8 @@ class AnimReader {
         }),
       };
     });
+
+    const entityName = this.hashNames[this.anims[0]?.bankHash];
 
     let xmlStr: string = xml(
       {
@@ -215,130 +219,157 @@ class AnimReader {
           {
             entity: [
               {
-                _attr: { id: "0", name: "poop" },
+                _attr: { id: "0", name: entityName },
               },
 
               // spriter_data > entity > [LOOP] animation
-              ...[...this.anims].reverse().map((anim, animIndex) => {
-                const {
-                  frameRate,
-                  frameCount,
-                  frames,
-                  name,
-                  facingBtye,
-                } = anim;
-                const frameDuration = 1000 / frameRate;
-                const frameLength = frameCount * frameDuration;
+              ...[...this.anims]
+                .sort((a, b) => (a.name < b.name ? -1 : 1))
+                .map((anim, animIndex) => {
+                  const {
+                    frameRate,
+                    frameCount,
+                    frames,
+                    name,
+                    facingBtye,
+                  } = anim;
+                  const frameDuration = 1000 / frameRate;
+                  const frameLength = frameCount * frameDuration;
 
-                // 填充最后一帧
-                const mergedFrames = [...frames];
-                if (frames.length) {
-                  mergedFrames.push(frames[frames.length - 1]);
-                }
+                  // 填充最后一帧
+                  const mergedFrames = [...frames];
+                  if (frames.length) {
+                    mergedFrames.push(frames[frames.length - 1]);
+                  }
 
-                // 图层
-                const layers: number[] = [];
+                  // 图层收集，我们需要遍历所有帧
+                  const layers = new Layers();
+                  mergedFrames.forEach(({ elements }) => {
+                    elements.forEach((element) => {
+                      layers.add(element.z, element.layerNameHash);
+                    });
+                  });
 
-                const animationName = getAnimationName(name, facingBtye);
+                  const animationName = getAnimationName(name, facingBtye);
 
-                return {
-                  animation: [
-                    {
-                      _attr: {
-                        id: animIndex,
-                        // 名字需要根据 facingBtye 自动转换
-                        name: animationName,
-                        length: Math.floor(frameLength),
+                  return {
+                    animation: [
+                      {
+                        _attr: {
+                          id: animIndex,
+                          // 名字需要根据 facingBtye 自动转换
+                          name: animationName,
+                          length: Math.floor(frameLength),
+                        },
                       },
-                    },
 
-                    // spriter_data > entity > [LOOP] animation > mainline
-                    {
-                      mainline: [
-                        ...mergedFrames.map((frame, frameIndex) => {
-                          const { elements, elementCount } = frame;
+                      // spriter_data > entity > [LOOP] animation > mainline
+                      {
+                        mainline: [
+                          ...mergedFrames.map((frame, frameIndex) => {
+                            const { elements, elementCount } = frame;
 
-                          // spriter_data > entity > [LOOP] animation > mainline > key
+                            // spriter_data > entity > [LOOP] animation > mainline > key
+                            return {
+                              key: [
+                                {
+                                  _attr: {
+                                    id: frameIndex,
+                                    time: Math.floor(
+                                      frameIndex * frameDuration
+                                    ),
+                                  },
+                                },
+                                // spriter_data > entity > [LOOP] animation > mainline > key > [LOOP] object_ref
+                                ...elements.map((element, elementIndex) => {
+                                  const { hash, buildFrame, z } = element;
+
+                                  const fileNameHash = `${hash}-${buildFrame}`;
+                                  let fileInfo = fileMap[fileNameHash];
+
+                                  if (!fileInfo) {
+                                    const externalFileName = this.hashNames[
+                                      hash
+                                    ];
+                                    debug(
+                                      1,
+                                      chalk.cyan(
+                                        `External resource: ${externalFileName} (${hash})`
+                                      )
+                                    );
+
+                                    fileInfo = {
+                                      name: externalFileName,
+                                      width: 0,
+                                      height: 0,
+                                      pivot_x: 0,
+                                      pivot_y: 0,
+                                    };
+                                  }
+
+                                  return {
+                                    object_ref: [
+                                      {
+                                        _attr: {
+                                          id: 0, // TODO: 这个 id 是啥意思？
+                                          name: this.hashNames[hash],
+
+                                          // 坐标信息
+                                          abs_x: 0,
+                                          abs_y: 0,
+                                          abs_pivot_x: fileInfo.pivot_x.toFixed(
+                                            6
+                                          ),
+                                          abs_pivot_y: fileInfo.pivot_y.toFixed(
+                                            6
+                                          ),
+                                          abs_angle: 0,
+                                          abs_scale_x: 1,
+                                          abs_scale_y: 1,
+                                          abs_a: 1,
+                                          timeline: layers.getLayerIndex(z),
+                                          // key: animsymmeta.getKeyId(), 看起来没用，我们先不管了
+                                          z_index: elementCount - elementIndex,
+                                        },
+                                      },
+                                    ],
+                                  };
+                                }),
+                              ],
+                            };
+                          }),
+                        ],
+                      },
+
+                      // spriter_data > entity > [LOOP] animation > [LOOP] timeline
+                      ...layers
+                        .getList()
+                        .map(({ hash, zIndex }, layerIndex) => {
                           return {
-                            key: [
+                            timeline: [
                               {
                                 _attr: {
-                                  id: frameIndex,
-                                  time: Math.floor(frameIndex * frameDuration),
+                                  id: layerIndex,
+                                  name: this.hashNames[hash],
+                                  [`data-zIndex`]: zIndex,
                                 },
                               },
-                              // spriter_data > entity > [LOOP] animation > mainline > key > [LOOP] object_ref
-                              ...elements.map((element, elementIndex) => {
-                                const {
-                                  hash,
-                                  buildFrame,
-                                  layerNameHash,
-                                } = element;
 
-                                // 填充图层
-                                let layerIndex = layers.indexOf(layerNameHash);
-                                if (layerIndex === -1) {
-                                  layerIndex = layers.length;
-                                  layers.push(layerNameHash);
-                                }
+                              // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
+                              // ...ele
+                              // {
+                              //   key: [
+                              //     {
 
-                                const fileNameHash = `${hash}-${buildFrame}`;
-                                let fileInfo = fileMap[fileNameHash];
-
-                                if (!fileInfo) {
-                                  const externalFileName = this.hashNames[hash];
-                                  debug(
-                                    1,
-                                    chalk.cyan(
-                                      `External resource: ${externalFileName} (${hash})`
-                                    )
-                                  );
-
-                                  fileInfo = {
-                                    name: externalFileName,
-                                    width: 0,
-                                    height: 0,
-                                    pivot_x: 0,
-                                    pivot_y: 0,
-                                  };
-                                }
-
-                                return {
-                                  object_ref: [
-                                    {
-                                      _attr: {
-                                        id: 0, // TODO: 这个 id 是啥意思？
-                                        name: this.hashNames[hash],
-
-                                        // 坐标信息
-                                        abs_x: 0,
-                                        abs_y: 0,
-                                        abs_pivot_x: fileInfo.pivot_x.toFixed(
-                                          6
-                                        ),
-                                        abs_pivot_y: fileInfo.pivot_y.toFixed(
-                                          6
-                                        ),
-                                        abs_angle: 0,
-                                        abs_scale_x: 1,
-                                        abs_scale_y: 1,
-                                        abs_a: 1,
-                                        timeline: layerIndex,
-                                        // key: animsymmeta.getKeyId(),
-                                        z_index: elementCount - elementIndex,
-                                      },
-                                    },
-                                  ],
-                                };
-                              }),
+                              //     },
+                              //   ],
+                              // },
                             ],
                           };
                         }),
-                      ],
-                    },
-                  ],
-                };
-              }),
+                    ],
+                  };
+                }),
             ],
           },
         ],
@@ -350,8 +381,8 @@ class AnimReader {
     xmlStr = `<?xml version="1.0" encoding="UTF-8"?>\n${xmlStr}`;
 
     // 清理闭标签
-    xmlStr = xmlStr.replace(/>[\s\r\n]*<\/file>/g, " />");
-    xmlStr = xmlStr.replace(/>[\s\r\n]*<\/object_ref>/g, " />");
+    xmlStr = xmlStr.replace(/>[\s\r\n]*<\/[\d\w_]*>/g, " />");
+    xmlStr = xmlStr.replace(/    /g, "\t");
 
     return xmlStr;
   }

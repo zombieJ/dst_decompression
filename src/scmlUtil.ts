@@ -52,12 +52,36 @@ const facingList: {
 ];
 
 export function getAnimationName(name: string, facingBtye: number) {
-	for (let i = 0; i < facingList.length; i += 1) {
-		const faceCondition = facingList[i];
-		if (faceCondition.code === facingBtye) {
-			return `${name}${faceCondition.suffix}`;
-		}
-	}
+  for (let i = 0; i < facingList.length; i += 1) {
+    const faceCondition = facingList[i];
+    if (faceCondition.code === facingBtye) {
+      return `${name}${faceCondition.suffix}`;
+    }
+  }
 
   return name;
+}
+
+// ============================ Layer ============================
+// 收集图层列表
+export class Layers {
+  private layers: Record<number, number> = {};
+
+  add(zIndex: number, hash: number) {
+    this.layers[zIndex] = hash;
+  }
+
+  getList() {
+    return Object.keys(this.layers)
+      .sort((a, b) => Number(a) - Number(b))
+      .map((zIndex) => ({
+        zIndex: Number(zIndex),
+        hash: this.layers[zIndex],
+      }));
+  }
+
+  /** 根据 zIndex 获取对应的 timeline */
+  getLayerIndex(zIndex: number) {
+    return this.getList().findIndex(layer => layer.zIndex === zIndex);
+  }
 }
