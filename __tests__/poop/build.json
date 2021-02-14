@@ -1,7 +1,7 @@
 {
   "version": 6,
   "filePath": "D:\\projects\\node-ktools\\__tests__\\poop\\build.bin",
-  "atlasNames": [
+  "atlases": [
     "atlas-0.tex"
   ],
   "hashNames": {
@@ -751,6 +751,12 @@
               ]
             }
           ],
+          "boundingBox": {
+            "left": 0.3229166567325592,
+            "right": 0.6354166865348816,
+            "top": 0.625,
+            "bottom": 1
+          },
           "atlasDepth": 0
         },
         {
@@ -820,6 +826,12 @@
               ]
             }
           ],
+          "boundingBox": {
+            "left": 0.8854166865348816,
+            "right": 0.9635416865348816,
+            "top": 0.8125,
+            "bottom": 1
+          },
           "atlasDepth": 0
         },
         {
@@ -1169,6 +1181,12 @@
               ]
             }
           ],
+          "boundingBox": {
+            "left": 0.78125,
+            "right": 0.8854166865348816,
+            "top": 0.4479166567325592,
+            "bottom": 1
+          },
           "atlasDepth": 0
         },
         {
@@ -1350,6 +1368,12 @@
               ]
             }
           ],
+          "boundingBox": {
+            "left": 0.6354166865348816,
+            "right": 0.78125,
+            "top": 0.4479166567325592,
+            "bottom": 1
+          },
           "atlasDepth": 0
         },
         {
@@ -2091,6 +2115,12 @@
               ]
             }
           ],
+          "boundingBox": {
+            "left": 0,
+            "right": 0.3229166567325592,
+            "top": 0.53125,
+            "bottom": 1
+          },
           "atlasDepth": 0
         }
       ]

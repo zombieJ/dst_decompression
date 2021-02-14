@@ -3,7 +3,8 @@ import * as fs from "fs-extra";
 import * as path from "path";
 
 // const ANIM_PATH = "farm_plant_tomato";
-const ANIM_PATH = "poop";
+// const ANIM_PATH = "poop";
+const ANIM_PATH = "treasure_chest";
 
 describe("Build", () => {
   it("get path", async () => {

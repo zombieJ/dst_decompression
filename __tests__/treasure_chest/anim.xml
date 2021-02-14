@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+    <folder id="0" name="chest_shadow">
+        <file id="0" name="chest_shadow/chest_shadow-0.png" width="248" height="36" pivot_x="0.499897" pivot_y="0.500014" />
+    </folder>
+    <folder id="1" name="keyhole">
+        <file id="0" name="keyhole/keyhole-16.png" width="140" height="128" pivot_x="0.571604" pivot_y="0.573441" />
+    </folder>
+    <folder id="2" name="sparkle">
+        <file id="0" name="sparkle/sparkle-0.png" width="216" height="188" pivot_x="0.499998" pivot_y="0.500136" />
+    </folder>
+    <folder id="3" name="chest01">
+        <file id="0" name="chest01/chest01-0.png" width="244" height="176" pivot_x="0.457785" pivot_y="0.090770" />
+        <file id="1" name="chest01/chest01-1.png" width="236" height="188" pivot_x="0.450951" pivot_y="0.088832" />
+        <file id="2" name="chest01/chest01-2.png" width="240" height="112" pivot_x="0.455935" pivot_y="0.130585" />
+        <file id="3" name="chest01/chest01-3.png" width="248" height="140" pivot_x="0.161288" pivot_y="-0.352136" />
+        <file id="4" name="chest01/chest01-4.png" width="244" height="168" pivot_x="0.484732" pivot_y="0.095688" />
+        <file id="5" name="chest01/chest01-5.png" width="244" height="116" pivot_x="0.465674" pivot_y="0.353237" />
+        <file id="6" name="chest01/chest01-6.png" width="292" height="88" pivot_x="0.716950" pivot_y="0.877278" />
+        <file id="7" name="chest01/chest01-7.png" width="212" height="80" pivot_x="0.227828" pivot_y="0.787819" />
+        <file id="8" name="chest01/chest01-8.png" width="208" height="52" pivot_x="0.840022" pivot_y="0.311548" />
+        <file id="9" name="chest01/chest01-9.png" width="192" height="48" pivot_x="-0.070964" pivot_y="0.311469" />
+    </folder>
+    <entity id="0" name="poop">
+        <animation id="0" name="place" length="833">
+            <mainline>
+                <key id="0" time="0">
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.840022" abs_pivot_y="0.311548" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="2" time="66">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.840022" abs_pivot_y="0.311548" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="3" time="100">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.840022" abs_pivot_y="0.311548" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="4" time="133">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.840022" abs_pivot_y="0.311548" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="5" time="166">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.840022" abs_pivot_y="0.311548" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="6" time="200">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.716950" abs_pivot_y="0.877278" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.227828" abs_pivot_y="0.787819" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="-0.070964" abs_pivot_y="0.311469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="7" time="233">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="8" time="266">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="9" time="300">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="10" time="333">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="11" time="366">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="12" time="400">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="13" time="433">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="7" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.465674" abs_pivot_y="0.353237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="14" time="466">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="15" time="500">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="16" time="533">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="17" time="566">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="18" time="600">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="19" time="633">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="20" time="666">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="21" time="700">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="22" time="733">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="23" time="766">
+                    <object_ref id="0" name="sparkle" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="6" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="24" time="800">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+                <key id="25" time="833">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="1" name="burnt" length="400">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="2" time="66">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="3" time="100">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="4" time="133">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="5" time="166">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="6" time="200">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="7" time="233">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="8" time="266">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="9" time="300">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="10" time="333">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="11" time="366">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+                <key id="12" time="400">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.484732" abs_pivot_y="0.095688" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="2" name="hit" length="433">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="2" time="66">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="3" time="100">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="4" time="133">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="5" time="166">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="6" time="200">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="7" time="233">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="8" time="266">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="9" time="300">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="10" time="333">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="11" time="366">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="12" time="400">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="13" time="433">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="3" name="close" length="366">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="2" time="66">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="3" time="100">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="4" time="133">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="5" time="166">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="6" time="200">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="7" time="233">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="8" time="266">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="9" time="300">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="10" time="333">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="11" time="366">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="4" name="open" length="200">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.450951" abs_pivot_y="0.088832" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="2" time="66">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="3" time="100">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="4" time="133">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="5" time="166">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="6" time="200">
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.455935" abs_pivot_y="0.130585" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.161288" abs_pivot_y="-0.352136" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="3" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="5" name="closed" length="33">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+                    <object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0.000000" abs_pivot_y="0.000000" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+        <animation id="6" name="anim" length="33">
+            <mainline>
+                <key id="0" time="0">
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="1" />
+                </key>
+                <key id="1" time="33">
+                    <object_ref id="0" name="keyhole" abs_x="0" abs_y="0" abs_pivot_x="0.571604" abs_pivot_y="0.573441" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+                    <object_ref id="0" name="chest01" abs_x="0" abs_y="0" abs_pivot_x="0.457785" abs_pivot_y="0.090770" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+                    <object_ref id="0" name="chest_shadow" abs_x="0" abs_y="0" abs_pivot_x="0.499897" abs_pivot_y="0.500014" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="1" />
+                </key>
+            </mainline>
+        </animation>
+    </entity>
+</spriter_data>

@@ -1,104 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
-    <folder>
+    <folder id="0" name="poop01">
+        <file id="0" name="poop01/poop01-0.png" width="240" height="144" pivot_x="0.487498" pivot_y="0.289066">
+        </file>
+        <file id="1" name="poop01/poop01-1.png" width="60" height="72" pivot_x="0.559992" pivot_y="-2.120472">
+        </file>
+        <file id="2" name="poop01/poop01-2.png" width="80" height="212" pivot_x="0.501869" pivot_y="0.073587">
+        </file>
+        <file id="3" name="poop01/poop01-3.png" width="112" height="212" pivot_x="0.585487" pivot_y="0.094578">
+        </file>
+        <file id="4" name="poop01/poop01-4.png" width="248" height="180" pivot_x="0.521671" pivot_y="0.184864">
+        </file>
     </folder>
     <entity id="0" name="poop">
         <animation id="0" name="dump_90s" length="633">
             <mainline>
                 <key id="0" time="0">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.559992" abs_pivot_y="-2.120472" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="1" time="33">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.559992" abs_pivot_y="-2.120472" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="2" time="66">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.501869" abs_pivot_y="0.073587" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="3" time="100">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.501869" abs_pivot_y="0.073587" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="4" time="133">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.585487" abs_pivot_y="0.094578" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="5" time="166">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.585487" abs_pivot_y="0.094578" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="6" time="200">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.521671" abs_pivot_y="0.184864" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="7" time="233">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.521671" abs_pivot_y="0.184864" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="8" time="266">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="9" time="300">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="10" time="333">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="11" time="366">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="12" time="400">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="13" time="433">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="14" time="466">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="15" time="500">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="16" time="533">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="17" time="566">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="18" time="600">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="19" time="633">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
             </mainline>
         </animation>
-        <animation id="1" name="dump_90s" length="66">
+        <animation id="1" name="idle_90s" length="66">
             <mainline>
                 <key id="0" time="0">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="1" time="33">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
                 <key id="2" time="66">
-                    <object_ref id="0" name="poop">
+                    <object_ref id="0" name="poop01" abs_x="0" abs_y="0" abs_pivot_x="0.487498" abs_pivot_y="0.289066" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1">
                     </object_ref>
                 </key>
             </mainline>

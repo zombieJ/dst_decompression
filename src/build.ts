@@ -177,9 +177,9 @@ class BuildReader {
             }
 
             boundingBox.left = Math.min(boundingBox.left, cell.u);
-            boundingBox.right = Math.min(boundingBox.right, cell.u);
+            boundingBox.right = Math.max(boundingBox.right, cell.u);
             boundingBox.top = Math.min(boundingBox.top, cell.v);
-            boundingBox.bottom = Math.min(boundingBox.bottom, cell.v);
+            boundingBox.bottom = Math.max(boundingBox.bottom, cell.v);
 
             return cell;
           });
