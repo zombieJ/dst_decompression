@@ -36,20 +36,20 @@ const facingList: {
   code: number;
   suffix: string;
 }[] = [
-  { code: FACING_RIGHT, suffix: SUFFIX_RIGHT },
-  { code: FACING_UP, suffix: SUFFIX_UP },
-  { code: FACING_LEFT, suffix: SUFFIX_LEFT },
-  { code: FACING_DOWN, suffix: SUFFIX_DOWN },
-  { code: FACING_UPRIGHT, suffix: SUFFIX_UPRIGHT },
-  { code: FACING_UPLEFT, suffix: SUFFIX_UPLEFT },
-  { code: FACING_DOWNRIGHT, suffix: SUFFIX_DOWNRIGHT },
-  { code: FACING_DOWNLEFT, suffix: SUFFIX_DOWNLEFT },
-  { code: FACING_SIDE, suffix: SUFFIX_SIDE },
-  { code: FACING_UPSIDE, suffix: SUFFIX_UPSIDE },
-  { code: FACING_DOWNSIDE, suffix: SUFFIX_DOWNSIDE },
-  { code: FACING_45S, suffix: SUFFIX_45S },
-  { code: FACING_90S, suffix: SUFFIX_90S },
-];
+    { code: FACING_RIGHT, suffix: SUFFIX_RIGHT },
+    { code: FACING_UP, suffix: SUFFIX_UP },
+    { code: FACING_LEFT, suffix: SUFFIX_LEFT },
+    { code: FACING_DOWN, suffix: SUFFIX_DOWN },
+    { code: FACING_UPRIGHT, suffix: SUFFIX_UPRIGHT },
+    { code: FACING_UPLEFT, suffix: SUFFIX_UPLEFT },
+    { code: FACING_DOWNRIGHT, suffix: SUFFIX_DOWNRIGHT },
+    { code: FACING_DOWNLEFT, suffix: SUFFIX_DOWNLEFT },
+    { code: FACING_SIDE, suffix: SUFFIX_SIDE },
+    { code: FACING_UPSIDE, suffix: SUFFIX_UPSIDE },
+    { code: FACING_DOWNSIDE, suffix: SUFFIX_DOWNSIDE },
+    { code: FACING_45S, suffix: SUFFIX_45S },
+    { code: FACING_90S, suffix: SUFFIX_90S },
+  ];
 
 export function getAnimationName(name: string, facingBtye: number) {
   for (let i = 0; i < facingList.length; i += 1) {
@@ -63,21 +63,64 @@ export function getAnimationName(name: string, facingBtye: number) {
 }
 
 // ============================ Layer ============================
+interface Layer { zIndex: number, hash: number, priority?: number }
+
 // 收集图层列表
 export class Layers {
-  private layers: Record<number, number> = {};
+  private layers: Layer[];
+  private snapshotLayers: Layer[];
+
+  startRecord = () => {
+    this.snapshotLayers = [];
+  };
 
   add(zIndex: number, hash: number) {
-    this.layers[zIndex] = hash;
+    this.snapshotLayers.push({ zIndex, hash });
   }
 
-  getList() {
-    return Object.keys(this.layers)
-      .sort((a, b) => Number(a) - Number(b))
-      .map((zIndex) => ({
-        zIndex: Number(zIndex),
-        hash: this.layers[zIndex],
+  flushRecord = () => {
+    if (!this.layers) {
+      // 如果不存在，直接赋值
+      this.layers = this.snapshotLayers;
+    } else {
+      console.log('Layers:', this.layers);
+      console.log('Snapshot:', this.snapshotLayers);
+
+      // 如果存在，我们就插值。首先先排个序
+      this.layers = this.layers.map((layer, layerIndex) => ({
+        ...layer,
+        priority: layerIndex,
       }));
+
+      let insertPriority = -100;
+      let searchStartIndex = 0;
+      this.snapshotLayers.forEach((layer) => {
+        const matchIndex = this.layers.findIndex((l, i) => l.hash === layer.hash && i >= searchStartIndex);
+        console.log('Index:', matchIndex, insertPriority, searchStartIndex);
+
+        if (matchIndex === -1) {
+          this.layers.unshift({
+            ...layer,
+            priority: insertPriority,
+          });
+
+          insertPriority += 0.01;
+          searchStartIndex += 1;
+        } else {
+          searchStartIndex = matchIndex + 1;
+          insertPriority = this.layers[matchIndex].priority + 0.01;
+        }
+      });
+
+      this.layers.sort((a, b) => a.priority - b.priority);
+
+    }
+
+
+  };
+
+  getList() {
+    return this.layers;
   }
 
   /** 根据 zIndex 获取对应的 timeline */

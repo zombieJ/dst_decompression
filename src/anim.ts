@@ -244,11 +244,17 @@ class AnimReader {
 
                   // 图层收集，我们需要遍历所有帧
                   const layers = new Layers();
-                  mergedFrames.forEach(({ elements }) => {
+                  mergedFrames.slice(0, 2).forEach(({ elements }) => {
+                    layers.startRecord();
+
                     elements.forEach((element) => {
                       layers.add(element.z, element.layerNameHash);
                     });
+
+                    layers.flushRecord();
                   });
+
+                  console.log('>>>', layers.getList());
 
                   const animationName = getAnimationName(name, facingBtye);
 
@@ -352,6 +358,7 @@ class AnimReader {
                                   id: layerIndex,
                                   name: this.hashNames[hash],
                                   [`data-zIndex`]: zIndex,
+                                  [`data-hash`]: hash,
                                 },
                               },
 
