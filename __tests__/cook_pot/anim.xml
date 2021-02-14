@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="lid">
+		<file id="0" name="lid/lid-0.png" width="260" height="156" pivot_x="0.473077" pivot_y="0.515705" />
+	</folder>
+	<folder id="1" name="pot">
+		<file id="0" name="pot/pot-0.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.480230" />
+		<file id="1" name="pot/pot-1.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.480230" />
+		<file id="2" name="pot/pot-2.png" width="296" height="140" pivot_x="0.519172" pivot_y="0.674286" />
+	</folder>
+	<folder id="2" name="burnt">
+		<file id="0" name="burnt/burnt-0.png" width="368" height="308" pivot_x="0.500000" pivot_y="0.499919" />
+	</folder>
+	<folder id="3" name="coals">
+		<file id="0" name="coals/coals-0.png" width="324" height="132" pivot_x="0.485340" pivot_y="0.543182" />
+		<file id="1" name="coals/coals-1.png" width="324" height="132" pivot_x="0.485340" pivot_y="0.543182" />
+	</folder>
+	<folder id="4" name="wood">
+		<file id="0" name="wood/wood-0.png" width="60" height="176" pivot_x="0.607500" pivot_y="0.899574" />
+	</folder>
+	<entity id="0" name="undefined" />
+</spriter_data>

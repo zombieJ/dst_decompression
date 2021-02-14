@@ -5,7 +5,8 @@ import * as path from "path";
 
 // const ANIM_PATH = "farm_plant_tomato";
 // const ANIM_PATH = "poop";
-const ANIM_PATH = "treasure_chest";
+// const ANIM_PATH = "treasure_chest";
+const ANIM_PATH = "cook_pot";
 
 setDebugLevel(99);
 
