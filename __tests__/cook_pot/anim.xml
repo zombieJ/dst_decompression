@@ -4,19 +4,88 @@
 		<file id="0" name="lid/lid-0.png" width="260" height="156" pivot_x="0.473077" pivot_y="0.515705" />
 	</folder>
 	<folder id="1" name="pot">
-		<file id="0" name="pot/pot-0.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.480230" />
-		<file id="1" name="pot/pot-1.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.480230" />
+		<file id="0" name="pot/pot-0.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.48023" />
+		<file id="1" name="pot/pot-1.png" width="296" height="196" pivot_x="0.519172" pivot_y="0.48023" />
 		<file id="2" name="pot/pot-2.png" width="296" height="140" pivot_x="0.519172" pivot_y="0.674286" />
 	</folder>
 	<folder id="2" name="burnt">
-		<file id="0" name="burnt/burnt-0.png" width="368" height="308" pivot_x="0.500000" pivot_y="0.499919" />
+		<file id="0" name="burnt/burnt-0.png" width="368" height="308" pivot_x="0.5" pivot_y="0.499919" />
 	</folder>
 	<folder id="3" name="coals">
-		<file id="0" name="coals/coals-0.png" width="324" height="132" pivot_x="0.485340" pivot_y="0.543182" />
-		<file id="1" name="coals/coals-1.png" width="324" height="132" pivot_x="0.485340" pivot_y="0.543182" />
+		<file id="0" name="coals/coals-0.png" width="324" height="132" pivot_x="0.48534" pivot_y="0.543182" />
+		<file id="1" name="coals/coals-1.png" width="324" height="132" pivot_x="0.48534" pivot_y="0.543182" />
 	</folder>
 	<folder id="4" name="wood">
-		<file id="0" name="wood/wood-0.png" width="60" height="176" pivot_x="0.607500" pivot_y="0.899574" />
+		<file id="0" name="wood/wood-0.png" width="60" height="176" pivot_x="0.6075" pivot_y="0.899574" />
 	</folder>
-	<entity id="0" name="undefined" />
+	<entity id="0" name="cook_pot">
+		<animation id="0" name="anim" length="33">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="lid" data-zIndex="-5" data-hash="899130535">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-5.85" y="240.35" scale_x="0.999529" scale_y="0.999529" angle="359.538" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="0" file="0" x="-5.85" y="240.35" scale_x="0.999529" scale_y="0.999529" angle="359.538" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot" data-zIndex="-3.3333332538604736" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="wood" data-zIndex="-1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+			</timeline>
+			<timeline id="3" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+			</timeline>
+			<timeline id="4" name="coals" data-zIndex="1.6666666269302368" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="3.3333332538604736" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
 </spriter_data>

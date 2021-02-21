@@ -3,7 +3,7 @@ import * as path from "path";
 import * as xml from "xml";
 import * as chalk from "chalk";
 import BuildReader from "./build";
-import { getAnimationName, Layers } from "./scmlUtil";
+import { decomposeMatrix, getAnimationName, Layers } from "./scmlUtil";
 import { BufferData, debug } from "./util";
 
 class AnimReader {
@@ -123,7 +123,7 @@ class AnimReader {
   }
 
   async scml(buildPath: string) {
-    this.anims = this.anims.filter((anim) => anim.name === "open");
+    this.anims = this.anims.filter((anim) => anim.name === "anim");
 
     // =============================== 需要加载贴图信息 ===============================
     const build = new BuildReader(buildPath);
@@ -136,6 +136,8 @@ class AnimReader {
       height: number;
       pivot_x: number;
       pivot_y: number;
+      pivot_x_format: number;
+      pivot_y_format: number;
     }
 
     const fileMap: Record<string, FileInfo> = {};
@@ -153,12 +155,17 @@ class AnimReader {
           const width = Math.ceil(w);
           const height = Math.ceil(h);
 
+          const pivot_x = 0.5 - x / width;
+          const pivot_y = 0.5 + y / height;
+
           const file = {
             name: fileName,
             width,
             height,
-            pivot_x: 0.5 - x / width,
-            pivot_y: 0.5 + y / height,
+            pivot_x,
+            pivot_y,
+            pivot_x_format: Number(pivot_x.toFixed(6)),
+            pivot_y_format: Number(pivot_y.toFixed(6)),
           };
 
           // 填充一下
@@ -204,8 +211,8 @@ class AnimReader {
                           name: `${folder.name}/${file.name}`,
                           width: file.width,
                           height: file.height,
-                          pivot_x: file.pivot_x.toFixed(6),
-                          pivot_y: file.pivot_y.toFixed(6),
+                          pivot_x: file.pivot_x_format,
+                          pivot_y: file.pivot_y_format,
                         },
                       },
                     ],
@@ -244,17 +251,19 @@ class AnimReader {
 
                   // 图层收集，我们需要遍历所有帧
                   const layers = new Layers();
-                  mergedFrames.slice(0, 2).forEach(({ elements }) => {
-                    layers.startRecord();
+                  mergedFrames
+                    .slice(0, 2)
+                    .forEach(({ elements }, frameIndex) => {
+                      layers.startRecord();
 
-                    elements.forEach((element) => {
-                      layers.add(element.z, element.layerNameHash);
+                      elements.forEach((element) => {
+                        layers.add(element, frameIndex);
+                      });
+
+                      layers.flushRecord();
                     });
 
-                    layers.flushRecord();
-                  });
-
-                  console.log('>>>', layers.getList());
+                  // console.log('>>>', layers.getList());
 
                   const animationName = getAnimationName(name, facingBtye);
 
@@ -310,6 +319,8 @@ class AnimReader {
                                       height: 0,
                                       pivot_x: 0,
                                       pivot_y: 0,
+                                      pivot_x_format: 0,
+                                      pivot_y_format: 0,
                                     };
                                   }
 
@@ -317,18 +328,15 @@ class AnimReader {
                                     object_ref: [
                                       {
                                         _attr: {
-                                          id: 0, // TODO: 这个 id 是啥意思？
+                                          // 看起来是和 timeline 对应的
+                                          id: layers.getLayerIndex(z),
                                           name: this.hashNames[hash],
 
                                           // 坐标信息
                                           abs_x: 0,
                                           abs_y: 0,
-                                          abs_pivot_x: fileInfo.pivot_x.toFixed(
-                                            6
-                                          ),
-                                          abs_pivot_y: fileInfo.pivot_y.toFixed(
-                                            6
-                                          ),
+                                          abs_pivot_x: fileInfo.pivot_x_format,
+                                          abs_pivot_y: fileInfo.pivot_y_format,
                                           abs_angle: 0,
                                           abs_scale_x: 1,
                                           abs_scale_y: 1,
@@ -350,7 +358,7 @@ class AnimReader {
                       // spriter_data > entity > [LOOP] animation > [LOOP] timeline
                       ...layers
                         .getList()
-                        .map(({ hash, zIndex }, layerIndex) => {
+                        .map(({ hash, zIndex, elementFrames }, layerIndex) => {
                           return {
                             timeline: [
                               {
@@ -363,14 +371,62 @@ class AnimReader {
                               },
 
                               // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
-                              // ...ele
-                              // {
-                              //   key: [
-                              //     {
+                              ...elementFrames.map(({ frame, ...element }) => {
+                                // 找到对应的文件
+                                const foloderIndex = folders.findIndex(folder => folder.name === this.hashNames[element.hash]);
 
-                              //     },
-                              //   ],
-                              // },
+                                // 根据 element matrix 转回属性
+                                const transform = decomposeMatrix({
+                                  a: element.m_a,
+                                  b: element.m_b,
+                                  c: element.m_c,
+                                  d: element.m_d,
+                                  e: element.m_tx,
+                                  f: element.m_ty,
+                                });
+
+                                const angle = (360 - transform.rotation) % 360;
+
+                                return {
+                                  key: [
+                                    {
+                                      _attr: {
+                                        id: frame,
+                                        time: Math.floor(frame * frameDuration),
+                                        // TODO:
+                                        // https://github.com/nsimplex/ktools/blob/a1d1362bdb2b9aa9146d7177fbf0e351eab414ba/src/krane/scml.cpp#L678
+                                        spin: 1,
+                                      },
+                                    },
+                                    // spriter_data > entity > [LOOP] animation
+                                    // > [LOOP] timeline > [LOOP] key > object
+                                    {
+                                      object: [
+                                        {
+                                          _attr: {
+                                            // folder="0" file="0"
+                                            folder: foloderIndex,
+                                            file: element.buildFrame,
+                                            x: Number(
+                                              transform.translateX.toFixed(2)
+                                            ),
+                                            y: -Number(
+                                              transform.translateY.toFixed(2)
+                                            ),
+                                            scale_x: Number(
+                                              transform.scaleX.toFixed(6)
+                                            ),
+                                            scale_y: Number(
+                                              transform.scaleY.toFixed(6)
+                                            ),
+                                            angle: Number(angle.toFixed(3)),
+                                          },
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                };
+                              }),
                             ],
                           };
                         }),
@@ -388,7 +444,9 @@ class AnimReader {
     xmlStr = `<?xml version="1.0" encoding="UTF-8"?>\n${xmlStr}`;
 
     // 清理闭标签
-    xmlStr = xmlStr.replace(/>[\s\r\n]*<\/[\d\w_]*>/g, " />");
+    xmlStr = xmlStr.replace(/>[\s\r\n]*<\/(file|object_ref|object)>/g, " />");
+
+    // 格式化 tab
     xmlStr = xmlStr.replace(/    /g, "\t");
 
     return xmlStr;
