@@ -3,12 +3,12 @@ import { setDebugLevel } from "../src/util";
 import * as fs from "fs-extra";
 import * as path from "path";
 
-// const ANIM_PATH = "farm_plant_tomato";
+const ANIM_PATH = "farm_plant_tomato";
 // const ANIM_PATH = "poop";
 // const ANIM_PATH = "treasure_chest";
-const ANIM_PATH = "cook_pot";
+// const ANIM_PATH = "cook_pot";
 
-setDebugLevel(99);
+setDebugLevel(1);
 
 describe("Anim", () => {
   it("to scml", async () => {

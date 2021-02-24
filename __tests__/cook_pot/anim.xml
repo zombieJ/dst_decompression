@@ -39,7 +39,7 @@
 				</key>
 			</mainline>
 			<timeline id="0" name="lid" data-zIndex="-5" data-hash="899130535">
-				<key id="0" time="0" spin="1">
+				<key id="0" time="0" spin="-1">
 					<object folder="0" file="0" x="-5.85" y="240.35" scale_x="0.999529" scale_y="0.999529" angle="359.538" />
 				</key>
 				<key id="1" time="33" spin="1">
@@ -63,7 +63,7 @@
 				</key>
 			</timeline>
 			<timeline id="3" name="wood" data-zIndex="0" data-hash="3619872109">
-				<key id="0" time="0" spin="1">
+				<key id="0" time="0" spin="-1">
 					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
 				</key>
 				<key id="1" time="33" spin="1">
@@ -79,11 +79,1580 @@
 				</key>
 			</timeline>
 			<timeline id="5" name="wood" data-zIndex="3.3333332538604736" data-hash="3619872109">
-				<key id="0" time="0" spin="1">
+				<key id="0" time="0" spin="-1">
 					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
 				</key>
 				<key id="1" time="33" spin="1">
 					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="burnt" length="66">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.499919" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.499919" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.499919" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="lid" data-zIndex="-5" data-hash="899130535">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="3" y="105.45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="2" file="0" x="3" y="105.45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="cooking_loop" length="566">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="13" time="433">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="14" time="466">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="16" time="533">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="17" time="566">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="lid" data-zIndex="-5" data-hash="899130535">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="0" x="-5.9" y="240.45" scale_x="0.999634" scale_y="0.999634" angle="357.998" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="0" file="0" x="-6.15" y="240.25" scale_x="0.999518" scale_y="0.999518" angle="358.437" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot" data-zIndex="-3.3333332538604736" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="5.7" y="180.1" scale_x="1.199846" scale_y="1.199846" angle="2.046" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="1" file="0" x="5.75" y="180.1" scale_x="1.199694" scale_y="1.199694" angle="2.005" />
+				</key>
+			</timeline>
+			<timeline id="2" name="wood" data-zIndex="-1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="83.1" y="117.85" scale_x="-0.997754" scale_y="1.000277" angle="13.038" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="4" file="0" x="83.1" y="117.85" scale_x="-0.997049" scale_y="0.999456" angle="13.019" />
+				</key>
+			</timeline>
+			<timeline id="3" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-87.05" y="121.85" scale_x="1.000639" scale_y="0.997676" angle="344.481" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-87" y="121.85" scale_x="0.999669" scale_y="0.996881" angle="344.482" />
+				</key>
+			</timeline>
+			<timeline id="4" name="coals" data-zIndex="1.6666666269302368" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="1" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="1" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="3.3333332538604736" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="1.1" y="120.95" scale_x="1.029659" scale_y="0.840066" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="1.15" y="121" scale_x="1.029567" scale_y="0.840025" angle="359.192" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="cooking_pre_loop" length="800">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="13" time="433">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="14" time="466">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="16" time="533">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="17" time="566">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="19" time="633">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="20" time="666">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="22" time="733">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="23" time="766">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+				<key id="24" time="800">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="3" />
+					<object_ref id="3" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="2" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot" data-zIndex="-5" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="wood" data-zIndex="-3" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+			</timeline>
+			<timeline id="2" name="wood" data-zIndex="-1" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+			</timeline>
+			<timeline id="3" name="coals" data-zIndex="1" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="wood" data-zIndex="3" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="cooking_pst" length="300">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot mask" data-zIndex="-5" data-hash="3181444119">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="2" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="swap_high" data-zIndex="-3.8888888359069824" data-hash="3406850382">
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="8.9" y="157.25" scale_x="1.434814" scale_y="1.033386" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="swap_mid" data-zIndex="-2.777777671813965" data-hash="1732201244">
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="8.9" y="141.75" scale_x="1.434814" scale_y="1.033386" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="swap_low" data-zIndex="-1.6666666269302368" data-hash="1724333352">
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="8.9" y="125.2" scale_x="1.434814" scale_y="1.033386" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="pot" data-zIndex="-3.3333332538604736" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="-1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+			</timeline>
+			<timeline id="6" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+			</timeline>
+			<timeline id="7" name="coals" data-zIndex="1.6666666269302368" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="8" name="wood" data-zIndex="3.3333332538604736" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="hit_cooking" length="400">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="5" />
+					<object_ref id="2" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="4" />
+					<object_ref id="3" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="3" />
+					<object_ref id="4" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="2" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="lid" data-zIndex="-5" data-hash="899130535">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-12.5" y="219.9" scale_x="0.999365" scale_y="0.999365" angle="2.52" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="0" file="0" x="-6.95" y="248.15" scale_x="1.036776" scale_y="1.02159" angle="358.751" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot" data-zIndex="-3.3333332538604736" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="3.85" y="158.45" scale_x="1.237845" scale_y="1.176341" angle="3.057" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="1" file="0" x="4.65" y="172.8" scale_x="1.217055" scale_y="1.198848" angle="1.032" />
+				</key>
+			</timeline>
+			<timeline id="2" name="wood" data-zIndex="-1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="81.75" y="96.45" scale_x="-0.998342" scale_y="0.998342" angle="24.805" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="4" file="0" x="81.75" y="110.95" scale_x="-0.997328" scale_y="0.997328" angle="19.536" />
+				</key>
+			</timeline>
+			<timeline id="3" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-92.9" y="100.5" scale_x="0.99848" scale_y="0.99848" angle="332.393" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-91.45" y="113.95" scale_x="0.997359" scale_y="0.997359" angle="338.438" />
+				</key>
+			</timeline>
+			<timeline id="4" name="coals" data-zIndex="1.6666666269302368" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="1" x="0.95" y="11.35" scale_x="1.076767" scale_y="0.983749" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="1" x="1" y="12.55" scale_x="1.065765" scale_y="1.011475" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="3.3333332538604736" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="1.95" y="125.55" scale_x="1.029405" scale_y="0.840019" angle="0.546" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="hit_empty" length="400">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="snow" data-zIndex="-5" data-hash="489261827">
+				<key id="0" time="0" spin="-1">
+					<object folder="-1" file="3" x="-62.6" y="235.85" scale_x="-1.412807" scale_y="0.983578" angle="349.513" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="-1" file="3" x="-57.75" y="267.8" scale_x="-1.464625" scale_y="1.006197" angle="345.927" />
+				</key>
+			</timeline>
+			<timeline id="1" name="snow" data-zIndex="-3.75" data-hash="489261827">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="1" x="51.7" y="232.3" scale_x="-0.915411" scale_y="0.814687" angle="20.281" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="-1" file="1" x="60.35" y="256.45" scale_x="-0.948397" scale_y="0.833943" angle="16.267" />
+				</key>
+			</timeline>
+			<timeline id="2" name="lid" data-zIndex="-2.5" data-hash="899130535">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-12.5" y="219.9" scale_x="0.999365" scale_y="0.999365" angle="2.52" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="0" file="0" x="-6.95" y="248.15" scale_x="1.036776" scale_y="1.02159" angle="358.751" />
+				</key>
+			</timeline>
+			<timeline id="3" name="pot" data-zIndex="-1.25" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="3.85" y="158.45" scale_x="1.237845" scale_y="1.176341" angle="3.057" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="1" file="0" x="4.65" y="172.8" scale_x="1.217055" scale_y="1.198848" angle="1.032" />
+				</key>
+			</timeline>
+			<timeline id="4" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="81.75" y="96.45" scale_x="-0.998342" scale_y="0.998342" angle="24.805" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="4" file="0" x="81.75" y="110.95" scale_x="-0.997328" scale_y="0.997328" angle="19.536" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="1.25" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-92.9" y="100.5" scale_x="0.99848" scale_y="0.99848" angle="332.393" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-91.45" y="113.95" scale_x="0.997359" scale_y="0.997359" angle="338.438" />
+				</key>
+			</timeline>
+			<timeline id="6" name="coals" data-zIndex="2.5" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.95" y="11.35" scale_x="1.076767" scale_y="0.983749" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="1" y="12.55" scale_x="1.065765" scale_y="1.011475" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="7" name="wood" data-zIndex="3.75" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="1.95" y="125.55" scale_x="1.029405" scale_y="0.840019" angle="0.546" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="hit_full" length="400">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot mask" data-zIndex="-5" data-hash="3181444119">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="3.85" y="158.45" scale_x="1.237845" scale_y="1.176341" angle="3.057" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="1" file="2" x="4.65" y="172.8" scale_x="1.217055" scale_y="1.198848" angle="1.032" />
+				</key>
+			</timeline>
+			<timeline id="1" name="swap_high" data-zIndex="-3.8888888359069824" data-hash="3406850382">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="-1.5" y="153.9" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="-1" file="0" x="2.15" y="173.5" scale_x="1.391384" scale_y="1.461226" angle="359.483" />
+				</key>
+			</timeline>
+			<timeline id="2" name="swap_mid" data-zIndex="-2.777777671813965" data-hash="1732201244">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="-1.5" y="132" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="-1" file="0" x="1.95" y="151.6" scale_x="1.391384" scale_y="1.461226" angle="359.483" />
+				</key>
+			</timeline>
+			<timeline id="3" name="swap_low" data-zIndex="-1.6666666269302368" data-hash="1724333352">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="-1.5" y="108.6" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="-1" file="0" x="1.7" y="128.2" scale_x="1.391384" scale_y="1.461226" angle="359.483" />
+				</key>
+			</timeline>
+			<timeline id="4" name="pot" data-zIndex="-0.5555555820465088" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="3.85" y="158.45" scale_x="1.237845" scale_y="1.176341" angle="3.057" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="1" file="0" x="4.65" y="172.8" scale_x="1.217055" scale_y="1.198848" angle="1.032" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="0.5555555820465088" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="81.75" y="96.45" scale_x="-0.998342" scale_y="0.998342" angle="24.805" />
+				</key>
+				<key id="1" time="33" spin="-1">
+					<object folder="4" file="0" x="81.75" y="110.95" scale_x="-0.997328" scale_y="0.997328" angle="19.536" />
+				</key>
+			</timeline>
+			<timeline id="6" name="wood" data-zIndex="1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-92.9" y="100.5" scale_x="0.99848" scale_y="0.99848" angle="332.393" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-91.45" y="113.95" scale_x="0.997359" scale_y="0.997359" angle="338.438" />
+				</key>
+			</timeline>
+			<timeline id="7" name="coals" data-zIndex="2.777777671813965" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.95" y="11.35" scale_x="1.076767" scale_y="0.983749" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="1" y="12.55" scale_x="1.065765" scale_y="1.011475" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="8" name="wood" data-zIndex="3.8888888359069824" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="1.95" y="125.55" scale_x="1.029405" scale_y="0.840019" angle="0.546" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="idle_empty" length="33">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="7" />
+					<object_ref id="2" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="6" />
+					<object_ref id="3" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="5" />
+					<object_ref id="4" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="4" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="3" />
+					<object_ref id="6" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="2" />
+					<object_ref id="7" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="snow" data-zIndex="-5" data-hash="489261827">
+				<key id="0" time="0" spin="-1">
+					<object folder="-1" file="3" x="-55.4" y="252.7" scale_x="-1.418467" scale_y="0.952761" angle="347.041" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="3" x="-55.4" y="252.7" scale_x="-1.418467" scale_y="0.952761" angle="347.041" />
+				</key>
+			</timeline>
+			<timeline id="1" name="snow" data-zIndex="-3.75" data-hash="489261827">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="1" x="59.25" y="243.55" scale_x="-0.917857" scale_y="0.790218" angle="16.659" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="1" x="59.25" y="243.55" scale_x="-0.917857" scale_y="0.790218" angle="16.659" />
+				</key>
+			</timeline>
+			<timeline id="2" name="lid" data-zIndex="-2.5" data-hash="899130535">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="0" x="-5.85" y="240.35" scale_x="0.999529" scale_y="0.999529" angle="359.538" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="0" file="0" x="-5.85" y="240.35" scale_x="0.999529" scale_y="0.999529" angle="359.538" />
+				</key>
+			</timeline>
+			<timeline id="3" name="pot" data-zIndex="-1.25" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="1.25" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+			</timeline>
+			<timeline id="6" name="coals" data-zIndex="2.5" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="7" name="wood" data-zIndex="3.75" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="idle_full" length="66">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.674286" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="9" />
+					<object_ref id="1" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="8" />
+					<object_ref id="2" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" z_index="7" />
+					<object_ref id="3" name="swap_cooked" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" z_index="6" />
+					<object_ref id="4" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" z_index="5" />
+					<object_ref id="5" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" z_index="4" />
+					<object_ref id="6" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" z_index="3" />
+					<object_ref id="7" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" z_index="2" />
+					<object_ref id="8" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot mask" data-zIndex="-5" data-hash="3181444119">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="2" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="swap_high" data-zIndex="-3.8888888359069824" data-hash="3406850382">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="6.7" y="217.5" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="6.7" y="217.5" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="swap_mid" data-zIndex="-2.777777671813965" data-hash="1732201244">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="6.7" y="195.6" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="6.7" y="195.6" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="swap_low" data-zIndex="-1.6666666269302368" data-hash="1724333352">
+				<key id="0" time="0" spin="1">
+					<object folder="-1" file="0" x="6.7" y="172.2" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="-1" file="0" x="6.7" y="172.2" scale_x="1.391479" scale_y="1.461349" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="pot" data-zIndex="-0.5555555820465088" data-hash="932570165">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="1" file="0" x="7.25" y="179.85" scale_x="1.199997" scale_y="1.199997" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="wood" data-zIndex="0.5555555820465088" data-hash="3619872109">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="84" y="117.85" scale_x="-0.999017" scale_y="0.999017" angle="13.022" />
+				</key>
+			</timeline>
+			<timeline id="6" name="wood" data-zIndex="1.6666666269302368" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="-86.15" y="121.85" scale_x="0.999154" scale_y="0.999154" angle="344.457" />
+				</key>
+			</timeline>
+			<timeline id="7" name="coals" data-zIndex="2.777777671813965" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="8" name="wood" data-zIndex="3.8888888359069824" data-hash="3619872109">
+				<key id="0" time="0" spin="-1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="4" file="0" x="2" y="120.95" scale_x="1.029552" scale_y="0.840148" angle="359.027" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="10" name="place" length="733">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="1" />
+				</key>
+				<key id="1" time="33">
+					<object_ref id="0" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="2" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="1" />
+				</key>
+				<key id="2" time="66">
+					<object_ref id="0" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="4" time="133">
+					<object_ref id="0" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="5" time="166">
+					<object_ref id="0" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="7" time="233">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="8" time="266">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="10" time="333">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="11" time="366">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="13" time="433">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="14" time="466">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="16" time="533">
+					<object_ref id="0" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="4" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="17" time="566">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="19" time="633">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="20" time="666">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+				<key id="22" time="733">
+					<object_ref id="0" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" z_index="8" />
+					<object_ref id="-1" name="snow" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="7" />
+					<object_ref id="-1" name="lid" abs_x="0" abs_y="0" abs_pivot_x="0.473077" abs_pivot_y="0.515705" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="6" />
+					<object_ref id="-1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.519172" abs_pivot_y="0.48023" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="5" />
+					<object_ref id="1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" z_index="4" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="3" />
+					<object_ref id="-1" name="coals" abs_x="0" abs_y="0" abs_pivot_x="0.48534" abs_pivot_y="0.543182" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="2" />
+					<object_ref id="-1" name="wood" abs_x="0" abs_y="0" abs_pivot_x="0.6075" abs_pivot_y="0.899574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="-1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="coals" data-zIndex="-5" data-hash="2701998876">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="0.85" y="8.75" scale_x="1.143784" scale_y="0.927185" angle="0" />
+				</key>
+				<key id="1" time="33" spin="1">
+					<object folder="3" file="0" x="0.8" y="8.7" scale_x="1.143753" scale_y="0.92717" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="wood" data-zIndex="0" data-hash="3619872109">
+				<key id="1" time="33" spin="-1">
+					<object folder="4" file="0" x="0.15" y="12.8" scale_x="1.029552" scale_y="0.125857" angle="359.027" />
 				</key>
 			</timeline>
 		</animation>

@@ -123,7 +123,7 @@ class AnimReader {
   }
 
   async scml(buildPath: string) {
-    this.anims = this.anims.filter((anim) => anim.name === "anim");
+    // this.anims = this.anims.filter((anim) => anim.name === "anim");
 
     // =============================== 需要加载贴图信息 ===============================
     const build = new BuildReader(buildPath);
@@ -175,6 +175,9 @@ class AnimReader {
         }),
       };
     });
+
+    // =================================== 生成文件 ===================================
+    const missingFiles: Record<string, Set<number>> = {};
 
     const entityName = this.hashNames[this.anims[0]?.bankHash];
 
@@ -263,8 +266,6 @@ class AnimReader {
                       layers.flushRecord();
                     });
 
-                  // console.log('>>>', layers.getList());
-
                   const animationName = getAnimationName(name, facingBtye);
 
                   return {
@@ -306,10 +307,13 @@ class AnimReader {
                                     const externalFileName = this.hashNames[
                                       hash
                                     ];
+                                    missingFiles[hash] =
+                                      missingFiles[hash] || new Set();
+                                    missingFiles[hash].add(buildFrame);
                                     debug(
-                                      1,
+                                      2,
                                       chalk.cyan(
-                                        `External resource: ${externalFileName} (${hash})`
+                                        `External resource: ${externalFileName} (${hash} - ${buildFrame})`
                                       )
                                     );
 
@@ -359,6 +363,8 @@ class AnimReader {
                       ...layers
                         .getList()
                         .map(({ hash, zIndex, elementFrames }, layerIndex) => {
+                          let lastElementFrameAngle = 0;
+
                           return {
                             timeline: [
                               {
@@ -373,7 +379,19 @@ class AnimReader {
                               // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
                               ...elementFrames.map(({ frame, ...element }) => {
                                 // 找到对应的文件
-                                const foloderIndex = folders.findIndex(folder => folder.name === this.hashNames[element.hash]);
+                                const foloderIndex = folders.findIndex(
+                                  (folder) =>
+                                    folder.name === this.hashNames[element.hash]
+                                );
+
+                                if (foloderIndex === -1) {
+                                  debug(
+                                    1,
+                                    `Not found foloder: ${
+                                      this.hashNames[element.hash]
+                                    }`
+                                  );
+                                }
 
                                 // 根据 element matrix 转回属性
                                 const transform = decomposeMatrix({
@@ -387,15 +405,25 @@ class AnimReader {
 
                                 const angle = (360 - transform.rotation) % 360;
 
+                                // spin 是根据上一帧的 angle 计算的
+                                let spin =
+                                  Math.abs(angle - lastElementFrameAngle) <= 180
+                                    ? 1
+                                    : -1;
+
+                                if (angle < lastElementFrameAngle) {
+                                  spin = -spin;
+                                }
+
+                                lastElementFrameAngle = angle;
+
                                 return {
                                   key: [
                                     {
                                       _attr: {
                                         id: frame,
                                         time: Math.floor(frame * frameDuration),
-                                        // TODO:
-                                        // https://github.com/nsimplex/ktools/blob/a1d1362bdb2b9aa9146d7177fbf0e351eab414ba/src/krane/scml.cpp#L678
-                                        spin: 1,
+                                        spin,
                                       },
                                     },
                                     // spriter_data > entity > [LOOP] animation
@@ -448,6 +476,20 @@ class AnimReader {
 
     // 格式化 tab
     xmlStr = xmlStr.replace(/    /g, "\t");
+
+    // 打印一下报告
+    debug(
+      1,
+      [
+        chalk.cyan("Missing Symbols:"),
+        ...Object.keys(missingFiles).map((hash) => {
+          const externalFileName = this.hashNames[hash];
+          return `${externalFileName} (${hash}): ${Array.from(
+            missingFiles[hash]
+          ).join(",")}`;
+        }),
+      ].join("\n")
+    );
 
     return xmlStr;
   }
