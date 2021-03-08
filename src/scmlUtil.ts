@@ -190,3 +190,69 @@ export function decomposeMatrix({ a, b, c, d, e, f }: Matrix) {
     scaleY: scaleY,
   };
 }
+
+// ========================= FileManager =========================
+export interface FileInfo {
+  width: number;
+  height: number;
+  pivot_x: number;
+  pivot_y: number;
+  pivot_x_format: number;
+  pivot_y_format: number;
+}
+
+export interface ReturnFileInfo extends FileInfo {
+  name: string;
+}
+
+export class FileManager {
+  hashNames: Record<string, string>;
+  files = new Map<number, Map<number, ReturnFileInfo>>();
+
+  constructor(hashNames: Record<string, string>) {
+    this.hashNames = hashNames;
+  }
+
+  folderCache: { name: string; files: ReturnFileInfo[] }[];
+
+  getFolder() {
+    if (!this.folderCache) {
+      this.folderCache = Array.from(this.files.entries()).map(([hash, frameInfos]) => {
+        const folderName = this.hashNames[hash];
+
+        return {
+          name: folderName,
+          files: Array.from(frameInfos.values()),
+        };
+      });
+    }
+
+    return this.folderCache;
+  }
+
+  add(hash: number, frame: number, fileInfo: FileInfo) {
+    // 创建文件序列
+    if (!this.files.has(hash)) {
+      this.files.set(hash, new Map());
+    }
+
+    const frameInfos = this.files.get(hash);
+    const folderName = this.hashNames[hash];
+
+    frameInfos.set(frame, {
+      name: `${folderName}-${frame}.png`,
+      ...fileInfo,
+    });
+  }
+
+  ensure(hash: number, frame: number): ReturnFileInfo {
+    const frameInfos = this.files.get(hash);
+    const fileInfo = frameInfos?.get(frame);
+
+    // 如果不存在，创建一个临时的
+    if (!fileInfo) {
+    }
+
+    return fileInfo;
+  }
+}

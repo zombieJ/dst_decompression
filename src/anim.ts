@@ -3,7 +3,12 @@ import * as path from "path";
 import * as xml from "xml";
 import * as chalk from "chalk";
 import BuildReader from "./build";
-import { decomposeMatrix, getAnimationName, Layers } from "./scmlUtil";
+import {
+  decomposeMatrix,
+  FileManager,
+  getAnimationName,
+  Layers,
+} from "./scmlUtil";
 import { BufferData, debug } from "./util";
 
 class AnimReader {
@@ -140,78 +145,36 @@ class AnimReader {
       pivot_y_format: number;
     }
 
-    const fileMap: Record<string, FileInfo> = {};
+    const fileManager = new FileManager(build.hashNames);
 
     // 读取文件信息
-    const folders = build.symbols.map((symbol) => {
-      // 文件夹
-      const folderName = build.hashNames[symbol.hash];
+    build.symbols.forEach((symbol) => {
+      // 遍历文件夹下的文件
+      symbol.frames.forEach(({ frame, w, h, x, y }) => {
+        const width = Math.ceil(w);
+        const height = Math.ceil(h);
 
-      return {
-        name: folderName,
-        files: symbol.frames.map(({ frame, w, h, x, y }) => {
-          const fileName = `${folderName}-${frame}.png`;
+        const pivot_x = 0.5 - x / width;
+        const pivot_y = 0.5 + y / height;
 
-          const width = Math.ceil(w);
-          const height = Math.ceil(h);
+        const file = {
+          width,
+          height,
+          pivot_x,
+          pivot_y,
+          pivot_x_format: Number(pivot_x.toFixed(6)),
+          pivot_y_format: Number(pivot_y.toFixed(6)),
+        };
 
-          const pivot_x = 0.5 - x / width;
-          const pivot_y = 0.5 + y / height;
-
-          const file = {
-            name: fileName,
-            width,
-            height,
-            pivot_x,
-            pivot_y,
-            pivot_x_format: Number(pivot_x.toFixed(6)),
-            pivot_y_format: Number(pivot_y.toFixed(6)),
-          };
-
-          // 填充一下
-          fileMap[`${symbol.hash}-${frame}`] = file;
-
-          return file;
-        }),
-      };
+        // 填充文件内容
+        fileManager.add(symbol.hash, frame, file);
+      })
     });
 
     // =================================== 生成文件 ===================================
     const missingFiles: Record<string, Set<number>> = {};
 
     const entityName = this.hashNames[this.anims[0]?.bankHash];
-
-    // 生成目录
-    const folderXML = folders.map((folder, folderIndex) => {
-      return {
-        folder: [
-          {
-            _attr: {
-              id: folderIndex,
-              name: folder.name,
-            },
-          },
-
-          // spriter_data > [LOOP] folder > [LOOP] file
-          ...folder.files.map((file, fileIndex) => {
-            return {
-              file: [
-                {
-                  _attr: {
-                    id: fileIndex,
-                    name: `${folder.name}/${file.name}`,
-                    width: file.width,
-                    height: file.height,
-                    pivot_x: file.pivot_x_format,
-                    pivot_y: file.pivot_y_format,
-                  },
-                },
-              ],
-            };
-          }),
-        ],
-      };
-    });
 
     // 遍历生成实体
     const xmlEntity = {
@@ -224,13 +187,7 @@ class AnimReader {
         ...[...this.anims]
           .sort((a, b) => (a.name < b.name ? -1 : 1))
           .map((anim, animIndex) => {
-            const {
-              frameRate,
-              frameCount,
-              frames,
-              name,
-              facingBtye,
-            } = anim;
+            const { frameRate, frameCount, frames, name, facingBtye } = anim;
             const frameDuration = 1000 / frameRate;
             const frameLength = frameCount * frameDuration;
 
@@ -285,13 +242,16 @@ class AnimReader {
                             const { hash, buildFrame, z } = element;
 
                             const fileNameHash = `${hash}-${buildFrame}`;
-                            let fileInfo = fileMap[fileNameHash];
+                            let fileInfo = fileManager.ensure(hash, buildFrame); //fileMap[fileNameHash];
 
                             if (!fileInfo) {
                               const externalFileName = this.hashNames[hash];
                               missingFiles[hash] =
                                 missingFiles[hash] || new Set();
                               missingFiles[hash].add(buildFrame);
+
+                              // 生成丢失文件
+
                               debug(
                                 2,
                                 chalk.cyan(
@@ -361,7 +321,7 @@ class AnimReader {
                         // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
                         ...elementFrames.map(({ frame, ...element }) => {
                           // 找到对应的文件
-                          const foloderIndex = folders.findIndex(
+                          const foloderIndex = fileManager.getFolder().findIndex(
                             (folder) =>
                               folder.name === this.hashNames[element.hash]
                           );
@@ -444,7 +404,39 @@ class AnimReader {
             };
           }),
       ],
-    }
+    };
+
+    // 生成目录
+    const folderXML = fileManager.getFolder().map((folder, folderIndex) => {
+      return {
+        folder: [
+          {
+            _attr: {
+              id: folderIndex,
+              name: folder.name,
+            },
+          },
+
+          // spriter_data > [LOOP] folder > [LOOP] file
+          ...folder.files.map((file, fileIndex) => {
+            return {
+              file: [
+                {
+                  _attr: {
+                    id: fileIndex,
+                    name: `${folder.name}/${file.name}`,
+                    width: file.width,
+                    height: file.height,
+                    pivot_x: file.pivot_x_format,
+                    pivot_y: file.pivot_y_format,
+                  },
+                },
+              ],
+            };
+          }),
+        ],
+      };
+    });
 
     const xmlData = {
       // spriter_data
