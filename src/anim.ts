@@ -181,292 +181,291 @@ class AnimReader {
 
     const entityName = this.hashNames[this.anims[0]?.bankHash];
 
-    let xmlStr: string = xml(
-      {
-        // spriter_data
-        spriter_data: [
+    // 生成目录
+    const folderXML = folders.map((folder, folderIndex) => {
+      return {
+        folder: [
           {
             _attr: {
-              scml_version: "1.0",
-              generator: "BrashMonkey Spriter",
-              generator_version: "b5",
+              id: folderIndex,
+              name: folder.name,
             },
           },
 
-          // spriter_data > [LOOP] folder
-          ...folders.map((folder, folderIndex) => {
+          // spriter_data > [LOOP] folder > [LOOP] file
+          ...folder.files.map((file, fileIndex) => {
             return {
-              folder: [
+              file: [
                 {
                   _attr: {
-                    id: folderIndex,
-                    name: folder.name,
+                    id: fileIndex,
+                    name: `${folder.name}/${file.name}`,
+                    width: file.width,
+                    height: file.height,
+                    pivot_x: file.pivot_x_format,
+                    pivot_y: file.pivot_y_format,
                   },
                 },
-
-                // spriter_data > [LOOP] folder > [LOOP] file
-                ...folder.files.map((file, fileIndex) => {
-                  return {
-                    file: [
-                      {
-                        _attr: {
-                          id: fileIndex,
-                          name: `${folder.name}/${file.name}`,
-                          width: file.width,
-                          height: file.height,
-                          pivot_x: file.pivot_x_format,
-                          pivot_y: file.pivot_y_format,
-                        },
-                      },
-                    ],
-                  };
-                }),
               ],
             };
           }),
+        ],
+      };
+    });
 
-          // spriter_data > entity
-          {
-            entity: [
-              {
-                _attr: { id: "0", name: entityName },
-              },
+    // 遍历生成实体
+    const xmlEntity = {
+      entity: [
+        {
+          _attr: { id: "0", name: entityName },
+        },
 
-              // spriter_data > entity > [LOOP] animation
-              ...[...this.anims]
-                .sort((a, b) => (a.name < b.name ? -1 : 1))
-                .map((anim, animIndex) => {
-                  const {
-                    frameRate,
-                    frameCount,
-                    frames,
-                    name,
-                    facingBtye,
-                  } = anim;
-                  const frameDuration = 1000 / frameRate;
-                  const frameLength = frameCount * frameDuration;
+        // spriter_data > entity > [LOOP] animation
+        ...[...this.anims]
+          .sort((a, b) => (a.name < b.name ? -1 : 1))
+          .map((anim, animIndex) => {
+            const {
+              frameRate,
+              frameCount,
+              frames,
+              name,
+              facingBtye,
+            } = anim;
+            const frameDuration = 1000 / frameRate;
+            const frameLength = frameCount * frameDuration;
 
-                  // 填充最后一帧
-                  const mergedFrames = [...frames];
-                  if (frames.length) {
-                    mergedFrames.push(frames[frames.length - 1]);
-                  }
+            // 填充最后一帧
+            const mergedFrames = [...frames];
+            if (frames.length) {
+              mergedFrames.push(frames[frames.length - 1]);
+            }
 
-                  // 图层收集，我们需要遍历所有帧
-                  const layers = new Layers();
-                  mergedFrames
-                    .slice(0, 2)
-                    .forEach(({ elements }, frameIndex) => {
-                      layers.startRecord();
+            // 图层收集，我们需要遍历所有帧
+            const layers = new Layers();
+            mergedFrames.slice(0, 2).forEach(({ elements }, frameIndex) => {
+              layers.startRecord();
 
-                      elements.forEach((element) => {
-                        layers.add(element, frameIndex);
-                      });
+              elements.forEach((element) => {
+                layers.add(element, frameIndex);
+              });
 
-                      layers.flushRecord();
-                    });
+              layers.flushRecord();
+            });
 
-                  const animationName = getAnimationName(name, facingBtye);
+            const animationName = getAnimationName(name, facingBtye);
 
-                  return {
-                    animation: [
-                      {
-                        _attr: {
-                          id: animIndex,
-                          // 名字需要根据 facingBtye 自动转换
-                          name: animationName,
-                          length: Math.floor(frameLength),
-                        },
-                      },
+            return {
+              animation: [
+                {
+                  _attr: {
+                    id: animIndex,
+                    // 名字需要根据 facingBtye 自动转换
+                    name: animationName,
+                    length: Math.floor(frameLength),
+                  },
+                },
 
-                      // spriter_data > entity > [LOOP] animation > mainline
-                      {
-                        mainline: [
-                          ...mergedFrames.map((frame, frameIndex) => {
-                            const { elements, elementCount } = frame;
+                // spriter_data > entity > [LOOP] animation > mainline
+                {
+                  mainline: [
+                    ...mergedFrames.map((frame, frameIndex) => {
+                      const { elements, elementCount } = frame;
 
-                            // spriter_data > entity > [LOOP] animation > mainline > key
+                      // spriter_data > entity > [LOOP] animation > mainline > key
+                      return {
+                        key: [
+                          {
+                            _attr: {
+                              id: frameIndex,
+                              time: Math.floor(frameIndex * frameDuration),
+                            },
+                          },
+                          // spriter_data > entity > [LOOP] animation > mainline > key > [LOOP] object_ref
+                          ...elements.map((element, elementIndex) => {
+                            const { hash, buildFrame, z } = element;
+
+                            const fileNameHash = `${hash}-${buildFrame}`;
+                            let fileInfo = fileMap[fileNameHash];
+
+                            if (!fileInfo) {
+                              const externalFileName = this.hashNames[hash];
+                              missingFiles[hash] =
+                                missingFiles[hash] || new Set();
+                              missingFiles[hash].add(buildFrame);
+                              debug(
+                                2,
+                                chalk.cyan(
+                                  `External resource: ${externalFileName} (${hash} - ${buildFrame})`
+                                )
+                              );
+
+                              fileInfo = {
+                                name: externalFileName,
+                                width: 0,
+                                height: 0,
+                                pivot_x: 0,
+                                pivot_y: 0,
+                                pivot_x_format: 0,
+                                pivot_y_format: 0,
+                              };
+                            }
+
                             return {
-                              key: [
+                              object_ref: [
                                 {
                                   _attr: {
-                                    id: frameIndex,
-                                    time: Math.floor(
-                                      frameIndex * frameDuration
-                                    ),
+                                    // 看起来是和 timeline 对应的
+                                    id: layers.getLayerIndex(z),
+                                    name: this.hashNames[hash],
+
+                                    // 坐标信息
+                                    abs_x: 0,
+                                    abs_y: 0,
+                                    abs_pivot_x: fileInfo.pivot_x_format,
+                                    abs_pivot_y: fileInfo.pivot_y_format,
+                                    abs_angle: 0,
+                                    abs_scale_x: 1,
+                                    abs_scale_y: 1,
+                                    abs_a: 1,
+                                    timeline: layers.getLayerIndex(z),
+                                    // key: animsymmeta.getKeyId(), 看起来没用，我们先不管了
+                                    z_index: elementCount - elementIndex,
                                   },
                                 },
-                                // spriter_data > entity > [LOOP] animation > mainline > key > [LOOP] object_ref
-                                ...elements.map((element, elementIndex) => {
-                                  const { hash, buildFrame, z } = element;
-
-                                  const fileNameHash = `${hash}-${buildFrame}`;
-                                  let fileInfo = fileMap[fileNameHash];
-
-                                  if (!fileInfo) {
-                                    const externalFileName = this.hashNames[
-                                      hash
-                                    ];
-                                    missingFiles[hash] =
-                                      missingFiles[hash] || new Set();
-                                    missingFiles[hash].add(buildFrame);
-                                    debug(
-                                      2,
-                                      chalk.cyan(
-                                        `External resource: ${externalFileName} (${hash} - ${buildFrame})`
-                                      )
-                                    );
-
-                                    fileInfo = {
-                                      name: externalFileName,
-                                      width: 0,
-                                      height: 0,
-                                      pivot_x: 0,
-                                      pivot_y: 0,
-                                      pivot_x_format: 0,
-                                      pivot_y_format: 0,
-                                    };
-                                  }
-
-                                  return {
-                                    object_ref: [
-                                      {
-                                        _attr: {
-                                          // 看起来是和 timeline 对应的
-                                          id: layers.getLayerIndex(z),
-                                          name: this.hashNames[hash],
-
-                                          // 坐标信息
-                                          abs_x: 0,
-                                          abs_y: 0,
-                                          abs_pivot_x: fileInfo.pivot_x_format,
-                                          abs_pivot_y: fileInfo.pivot_y_format,
-                                          abs_angle: 0,
-                                          abs_scale_x: 1,
-                                          abs_scale_y: 1,
-                                          abs_a: 1,
-                                          timeline: layers.getLayerIndex(z),
-                                          // key: animsymmeta.getKeyId(), 看起来没用，我们先不管了
-                                          z_index: elementCount - elementIndex,
-                                        },
-                                      },
-                                    ],
-                                  };
-                                }),
                               ],
                             };
                           }),
                         ],
-                      },
+                      };
+                    }),
+                  ],
+                },
 
-                      // spriter_data > entity > [LOOP] animation > [LOOP] timeline
-                      ...layers
-                        .getList()
-                        .map(({ hash, zIndex, elementFrames }, layerIndex) => {
-                          let lastElementFrameAngle = 0;
+                // spriter_data > entity > [LOOP] animation > [LOOP] timeline
+                ...layers
+                  .getList()
+                  .map(({ hash, zIndex, elementFrames }, layerIndex) => {
+                    let lastElementFrameAngle = 0;
+
+                    return {
+                      timeline: [
+                        {
+                          _attr: {
+                            id: layerIndex,
+                            name: this.hashNames[hash],
+                            [`data-zIndex`]: zIndex,
+                            [`data-hash`]: hash,
+                          },
+                        },
+
+                        // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
+                        ...elementFrames.map(({ frame, ...element }) => {
+                          // 找到对应的文件
+                          const foloderIndex = folders.findIndex(
+                            (folder) =>
+                              folder.name === this.hashNames[element.hash]
+                          );
+
+                          if (foloderIndex === -1) {
+                            debug(
+                              1,
+                              `Not found foloder: ${
+                                this.hashNames[element.hash]
+                              }`
+                            );
+                          }
+
+                          // 根据 element matrix 转回属性
+                          const transform = decomposeMatrix({
+                            a: element.m_a,
+                            b: element.m_b,
+                            c: element.m_c,
+                            d: element.m_d,
+                            e: element.m_tx,
+                            f: element.m_ty,
+                          });
+
+                          const angle = (360 - transform.rotation) % 360;
+
+                          // spin 是根据上一帧的 angle 计算的
+                          let spin =
+                            Math.abs(angle - lastElementFrameAngle) <= 180
+                              ? 1
+                              : -1;
+
+                          if (angle < lastElementFrameAngle) {
+                            spin = -spin;
+                          }
+
+                          lastElementFrameAngle = angle;
 
                           return {
-                            timeline: [
+                            key: [
                               {
                                 _attr: {
-                                  id: layerIndex,
-                                  name: this.hashNames[hash],
-                                  [`data-zIndex`]: zIndex,
-                                  [`data-hash`]: hash,
+                                  id: frame,
+                                  time: Math.floor(frame * frameDuration),
+                                  spin,
                                 },
                               },
-
-                              // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
-                              ...elementFrames.map(({ frame, ...element }) => {
-                                // 找到对应的文件
-                                const foloderIndex = folders.findIndex(
-                                  (folder) =>
-                                    folder.name === this.hashNames[element.hash]
-                                );
-
-                                if (foloderIndex === -1) {
-                                  debug(
-                                    1,
-                                    `Not found foloder: ${
-                                      this.hashNames[element.hash]
-                                    }`
-                                  );
-                                }
-
-                                // 根据 element matrix 转回属性
-                                const transform = decomposeMatrix({
-                                  a: element.m_a,
-                                  b: element.m_b,
-                                  c: element.m_c,
-                                  d: element.m_d,
-                                  e: element.m_tx,
-                                  f: element.m_ty,
-                                });
-
-                                const angle = (360 - transform.rotation) % 360;
-
-                                // spin 是根据上一帧的 angle 计算的
-                                let spin =
-                                  Math.abs(angle - lastElementFrameAngle) <= 180
-                                    ? 1
-                                    : -1;
-
-                                if (angle < lastElementFrameAngle) {
-                                  spin = -spin;
-                                }
-
-                                lastElementFrameAngle = angle;
-
-                                return {
-                                  key: [
-                                    {
-                                      _attr: {
-                                        id: frame,
-                                        time: Math.floor(frame * frameDuration),
-                                        spin,
-                                      },
+                              // spriter_data > entity > [LOOP] animation
+                              // > [LOOP] timeline > [LOOP] key > object
+                              {
+                                object: [
+                                  {
+                                    _attr: {
+                                      // folder="0" file="0"
+                                      folder: foloderIndex,
+                                      file: element.buildFrame,
+                                      x: Number(
+                                        transform.translateX.toFixed(2)
+                                      ),
+                                      y: -Number(
+                                        transform.translateY.toFixed(2)
+                                      ),
+                                      scale_x: Number(
+                                        transform.scaleX.toFixed(6)
+                                      ),
+                                      scale_y: Number(
+                                        transform.scaleY.toFixed(6)
+                                      ),
+                                      angle: Number(angle.toFixed(3)),
                                     },
-                                    // spriter_data > entity > [LOOP] animation
-                                    // > [LOOP] timeline > [LOOP] key > object
-                                    {
-                                      object: [
-                                        {
-                                          _attr: {
-                                            // folder="0" file="0"
-                                            folder: foloderIndex,
-                                            file: element.buildFrame,
-                                            x: Number(
-                                              transform.translateX.toFixed(2)
-                                            ),
-                                            y: -Number(
-                                              transform.translateY.toFixed(2)
-                                            ),
-                                            scale_x: Number(
-                                              transform.scaleX.toFixed(6)
-                                            ),
-                                            scale_y: Number(
-                                              transform.scaleY.toFixed(6)
-                                            ),
-                                            angle: Number(angle.toFixed(3)),
-                                          },
-                                        },
-                                      ],
-                                    },
-                                  ],
-                                };
-                              }),
+                                  },
+                                ],
+                              },
                             ],
                           };
                         }),
-                    ],
-                  };
-                }),
-            ],
+                      ],
+                    };
+                  }),
+              ],
+            };
+          }),
+      ],
+    }
+
+    const xmlData = {
+      // spriter_data
+      spriter_data: [
+        {
+          _attr: {
+            scml_version: "1.0",
+            generator: "BrashMonkey Spriter",
+            generator_version: "b5",
           },
-        ],
-      },
-      true
-    );
+        },
+
+        // spriter_data > [LOOP] folder
+        ...folderXML,
+
+        // spriter_data > entity
+        xmlEntity,
+      ],
+    };
+
+    let xmlStr: string = xml(xmlData, true);
 
     // 标注信息
     xmlStr = `<?xml version="1.0" encoding="UTF-8"?>\n${xmlStr}`;
@@ -486,7 +485,9 @@ class AnimReader {
           const externalFileName = this.hashNames[hash];
           return `${externalFileName} (${hash}): ${Array.from(
             missingFiles[hash]
-          ).join(",")}`;
+          )
+            .sort((a, b) => a - b)
+            .join(",")}`;
         }),
       ].join("\n")
     );
