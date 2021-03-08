@@ -168,12 +168,10 @@ class AnimReader {
 
         // 填充文件内容
         fileManager.add(symbol.hash, frame, file);
-      })
+      });
     });
 
     // =================================== 生成文件 ===================================
-    const missingFiles: Record<string, Set<number>> = {};
-
     const entityName = this.hashNames[this.anims[0]?.bankHash];
 
     // 遍历生成实体
@@ -241,34 +239,10 @@ class AnimReader {
                           ...elements.map((element, elementIndex) => {
                             const { hash, buildFrame, z } = element;
 
-                            const fileNameHash = `${hash}-${buildFrame}`;
-                            let fileInfo = fileManager.ensure(hash, buildFrame); //fileMap[fileNameHash];
-
-                            if (!fileInfo) {
-                              const externalFileName = this.hashNames[hash];
-                              missingFiles[hash] =
-                                missingFiles[hash] || new Set();
-                              missingFiles[hash].add(buildFrame);
-
-                              // 生成丢失文件
-
-                              debug(
-                                2,
-                                chalk.cyan(
-                                  `External resource: ${externalFileName} (${hash} - ${buildFrame})`
-                                )
-                              );
-
-                              fileInfo = {
-                                name: externalFileName,
-                                width: 0,
-                                height: 0,
-                                pivot_x: 0,
-                                pivot_y: 0,
-                                pivot_x_format: 0,
-                                pivot_y_format: 0,
-                              };
-                            }
+                            const fileInfo = fileManager.ensure(
+                              hash,
+                              buildFrame
+                            );
 
                             return {
                               object_ref: [
@@ -321,19 +295,10 @@ class AnimReader {
                         // spriter_data > entity > [LOOP] animation > [LOOP] timeline > [LOOP] key
                         ...elementFrames.map(({ frame, ...element }) => {
                           // 找到对应的文件
-                          const foloderIndex = fileManager.getFolder().findIndex(
-                            (folder) =>
-                              folder.name === this.hashNames[element.hash]
+                          const foloderIndex = fileManager.ensureFolderIndex(
+                            this.hashNames[element.hash],
+                            element.hash
                           );
-
-                          if (foloderIndex === -1) {
-                            debug(
-                              1,
-                              `Not found foloder: ${
-                                this.hashNames[element.hash]
-                              }`
-                            );
-                          }
 
                           // 根据 element matrix 转回属性
                           const transform = decomposeMatrix({
@@ -473,14 +438,17 @@ class AnimReader {
       1,
       [
         chalk.cyan("Missing Symbols:"),
-        ...Object.keys(missingFiles).map((hash) => {
+        ...Object.keys(fileManager.missingFiles).map((hash) => {
           const externalFileName = this.hashNames[hash];
-          return `${externalFileName} (${hash}): ${Array.from(
-            missingFiles[hash]
-          )
+          const frames = Array.from(fileManager.missingFiles[hash]);
+
+          return `${externalFileName} (${hash}): ${frames
             .sort((a, b) => a - b)
             .join(",")}`;
         }),
+        "",
+        chalk.cyan("Missing Folders:"),
+        ...Array.from(fileManager.missingFolders),
       ].join("\n")
     );
 

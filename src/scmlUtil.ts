@@ -207,7 +207,9 @@ export interface ReturnFileInfo extends FileInfo {
 
 export class FileManager {
   hashNames: Record<string, string>;
-  files = new Map<number, Map<number, ReturnFileInfo>>();
+  files = new Map<number, Map<number, FileInfo>>();
+  missingFiles: Record<number | string, Set<number>> = {};
+  missingFolders: Set<string> = new Set();
 
   constructor(hashNames: Record<string, string>) {
     this.hashNames = hashNames;
@@ -215,34 +217,59 @@ export class FileManager {
 
   folderCache: { name: string; files: ReturnFileInfo[] }[];
 
-  getFolder() {
-    if (!this.folderCache) {
-      this.folderCache = Array.from(this.files.entries()).map(([hash, frameInfos]) => {
-        const folderName = this.hashNames[hash];
+  getFolder(): {
+    name: string;
+    files: ReturnFileInfo[];
+  }[] {
+    if (!this.folderCache || true) {
+      this.folderCache = Array.from(this.files.entries()).map(
+        ([hash, frameInfos]) => {
+          const folderName = this.hashNames[hash];
 
-        return {
-          name: folderName,
-          files: Array.from(frameInfos.values()),
-        };
-      });
+          return {
+            name: folderName,
+            files: Array.from(frameInfos.entries()).map(([frame, fileInfo]) => {
+              const folderName = this.hashNames[hash];
+              return {
+                name: `${folderName}-${frame}.png`,
+                ...fileInfo,
+              };
+            }),
+          };
+        }
+      );
     }
 
     return this.folderCache;
   }
 
+  ensureFolderIndex(name: string, fallbackHash: number) {
+    const index = Array.from(this.files.keys()).findIndex(
+      (hash) => this.hashNames[hash] === name
+    );
+
+    if (index >= 0) {
+      return index;
+    }
+
+    // 不存在则需要创建
+    this.hashNames[fallbackHash] = name;
+    this.ensureFolder(fallbackHash);
+    this.missingFolders.add(name);
+  }
+
   add(hash: number, frame: number, fileInfo: FileInfo) {
     // 创建文件序列
+    this.ensureFolder(hash);
+
+    const frameInfos = this.files.get(hash);
+    frameInfos.set(frame, fileInfo);
+  }
+
+  ensureFolder(hash: number) {
     if (!this.files.has(hash)) {
       this.files.set(hash, new Map());
     }
-
-    const frameInfos = this.files.get(hash);
-    const folderName = this.hashNames[hash];
-
-    frameInfos.set(frame, {
-      name: `${folderName}-${frame}.png`,
-      ...fileInfo,
-    });
   }
 
   ensure(hash: number, frame: number): ReturnFileInfo {
@@ -251,8 +278,25 @@ export class FileManager {
 
     // 如果不存在，创建一个临时的
     if (!fileInfo) {
+      this.missingFiles[hash] = this.missingFiles[hash] || new Set();
+      this.missingFiles[hash].add(frame);
+
+      this.add(hash, frame, {
+        width: 1,
+        height: 1,
+        pivot_x: 0,
+        pivot_y: 0,
+        pivot_x_format: 0,
+        pivot_y_format: 0,
+      });
+
+      return this.ensure(hash, frame);
     }
 
-    return fileInfo;
+    const folderName = this.hashNames[hash];
+    return {
+      name: `${folderName}-${frame}.png`,
+      ...fileInfo,
+    };
   }
 }
