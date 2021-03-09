@@ -1,3 +1,4 @@
+import * as jimp from "jimp";
 import { AnimReader } from "../src";
 import { setDebugLevel } from "../src/util";
 import * as fs from "fs-extra";
@@ -21,10 +22,35 @@ describe("Anim", () => {
       "utf8"
     );
 
+    // 读取 scml 内容
+    const scmlInfo = await anim.scml(
+      path.resolve(__dirname, ANIM_PATH, "build.bin")
+    );
+
+    // 保存 scml
     await fs.writeFile(
       path.resolve(__dirname, ANIM_PATH, "anim.xml"),
-      await anim.scml(path.resolve(__dirname, ANIM_PATH, "build.bin")),
+      scmlInfo.content,
       "utf8"
     );
+
+    // 保存临时图片
+    const placeholderPath = path.resolve(
+      __dirname,
+      ANIM_PATH,
+      "img_placeholder"
+    );
+    await fs.remove(placeholderPath);
+
+    for (let i = 0; i < scmlInfo.missingFiles.length; i += 1) {
+      const filePath = scmlInfo.missingFiles[i];
+
+      const mergedFilePath = path.resolve(placeholderPath, filePath);
+      await fs.ensureDir(path.dirname(mergedFilePath));
+
+      const img = new jimp(1, 1);
+      img.setPixelColor(parseInt("FF000000", 16), 0, 0);
+      img.write(mergedFilePath);
+    }
   });
 });

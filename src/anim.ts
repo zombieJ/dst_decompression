@@ -434,6 +434,7 @@ class AnimReader {
     xmlStr = xmlStr.replace(/    /g, "\t");
 
     // 打印一下报告
+    const missingFiles: string[] = [];
     debug(
       1,
       [
@@ -441,6 +442,12 @@ class AnimReader {
         ...Object.keys(fileManager.missingFiles).map((hash) => {
           const externalFileName = this.hashNames[hash];
           const frames = Array.from(fileManager.missingFiles[hash]);
+
+          frames.forEach((frame) => {
+            missingFiles.push(
+              `${externalFileName}/${externalFileName}-${frame}.png`
+            );
+          });
 
           return `${externalFileName} (${hash}): ${frames
             .sort((a, b) => a - b)
@@ -452,7 +459,10 @@ class AnimReader {
       ].join("\n")
     );
 
-    return xmlStr;
+    return {
+      content: xmlStr,
+      missingFiles,
+    };
   }
 }
 
